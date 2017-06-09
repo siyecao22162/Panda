@@ -16,6 +16,7 @@ __pycache__
 .~lock.*
 *.DS_Store
 .python-version
+.git-credentials
 
 # IDE files
 .project
