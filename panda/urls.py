@@ -18,7 +18,6 @@ admin.autodiscover()
 urlpatterns = [
     # Include admin as convenience. It's unsupported and only included
     # for developers.
-    url(r'^$',views.index, name='index'),
 
     url(r'^admin/', include(admin.site.urls)),
 
@@ -38,7 +37,7 @@ urlpatterns += i18n_patterns(
     # Custom functionality to allow dashboard users to be created
     url(r'gateway/', include(gateway_urls)),
     # Oscar's normal URLs
-    url(r'^food/', application.urls),
+    url(r'^', application.urls),
 )
 
 if settings.DEBUG:
