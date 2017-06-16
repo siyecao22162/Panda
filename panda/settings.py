@@ -22,7 +22,7 @@ ADMINS = (
     ('David Winterbottom', 'david.winterbottom@gmail.com'),
     ('Michael van Tellingen', 'michaelvantellingen@gmail.com'),
 )
-EMAIL_SUBJECT_PREFIX = '[Oscar sandbox] '
+EMAIL_SUBJECT_PREFIX = '[Panda Annie] '
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 MANAGERS = ADMINS
@@ -352,12 +352,12 @@ OSCAR_SHOP_NAME = 'Panda'
 OSCAR_SHOP_TAGLINE = 'Annie'
 
 # email setup
-EMAIL_HOST = 'smtp.sina.cn'
-EMAIL_PORT = 25
-EMAIL_HOST_USER = 'panda_annie@sina.cn'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'pandaannielai@gmail.com'
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
-OSCAR_FROM_EMAIL = 'panda_annie@sina.cn'
+OSCAR_FROM_EMAIL = 'pandaannielai@gmail.com'
 
 # Hidden Oscar features, e.g. wishlists or reviews
 OSCAR_HIDDEN_FEATURES = ["reviews", "wishlists"]
