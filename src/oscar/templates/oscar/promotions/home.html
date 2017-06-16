@@ -37,7 +37,6 @@
 <body>
 
 
-    {% include "partials/nav_accounts.html" %}
 	<!-- Header -->
 	<div class="aitsheaderw3ls" id="agilehome">
 
@@ -48,15 +47,16 @@
 					<nav class="menu">
 						<div class="icon-list">
 							<a class="scroll active" href="#agilehome"><i class="fa fa-home"></i><span>Home</span></a>
-							<a class="scroll" href="#sl3waboutstia"><i class="fa fa-info"></i><span>About</span></a>
-							<a  href="catalogue/"><i class="fa fa-birthday-cake"></i><span>FOOD</span></a>
+							<a class="scroll" href="#sl3waboutstia"><i class="fa fa-info"></i><span>{% trans "About" %}</span></a>
+							<a  href="catalogue/"><i class="fa fa-birthday-cake"></i><span>{% trans "ALL PRODUCTS" %}</span></a>
                             <!--
 							<a class="scroll" href="#portfolio"><i class="fa fa-picture-o"></i><span>Portfolio</span></a>
 							<a class="scroll" href="#w3lsstatsaits"><i class="fa fa-bar-chart"></i><span>Stats</span></a>
 							<a class="scroll" href="#chefw3agile"><i class="fa fa-user"></i><span>Chefs</span></a>
 							<a class="scroll" href="#agileinfofeedback"><i class="fa fa-comment-o"></i><span>Feedback</span></a>
-                            -->
+
 							<a class="scroll" href="#newsletter"><i class="fa fa-envelope-o"></i><span>Subscribe</span></a>
+							                      -->
 							<a class="scroll" href="#aitscontactw3l"><i class="fa fa-phone"></i><span>Contact</span></a>
 						</div>
 					</nav>
@@ -65,13 +65,13 @@
 				<button class="menu-button" id="open-button">Open Menu</button>
 			</div>
 			<div class="agileinfomenu">
-				<p>MENU</p>
+				<p>{% trans "MENU" %}</p>
 			</div>
 			<div class="aitslogow3ls">
 					<a href="index.html"><div class="agilelogo">Panda  Annie</div></a>
 			</div>
 			<div class="wthreecontact">
-				<p><a class="scroll" href="#aitscontactw3l"><i class="fa fa-envelope-o" aria-hidden="true"></i> CONTACT</a></p>
+				<p><a class="scroll" href="#aitscontactw3l"><i class="fa fa-envelope-o" aria-hidden="true"></i> {% trans "CONTACT" %}</a></p>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -574,6 +574,7 @@
 
 
 	<!-- Newsletter -->
+    <!-- TODO: add newsletter function
 	<div class="newsletter" id="newsletter">
 		<div class="container">
 			<div class="new-grids">
@@ -590,6 +591,7 @@
 			</div>
 		</div>
 	</div>
+	-->
 	<!-- //Newsletter -->
 
 
