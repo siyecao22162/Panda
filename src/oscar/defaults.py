@@ -3,7 +3,7 @@ from collections import OrderedDict
 from django.core.urlresolvers import reverse_lazy
 from django.utils.translation import ugettext_lazy as _
 
-OSCAR_SHOP_NAME = 'Panda'
+OSCAR_SHOP_NAME = 'Oscar'
 OSCAR_SHOP_TAGLINE = ''
 OSCAR_HOMEPAGE = reverse_lazy('promotions:home')
 
@@ -93,7 +93,7 @@ OSCAR_SLUG_ALLOW_UNICODE = False
 OSCAR_COOKIES_DELETE_ON_LOGOUT = ['oscar_recently_viewed_products', ]
 
 # Hidden Oscar features, e.g. wishlists or reviews
-OSCAR_HIDDEN_FEATURES = ["reviews", "wishlists"]
+OSCAR_HIDDEN_FEATURES = []
 
 # Menu structure of the dashboard navigation
 OSCAR_DASHBOARD_NAVIGATION = [
