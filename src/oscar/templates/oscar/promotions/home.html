@@ -70,9 +70,29 @@
 			<div class="aitslogow3ls">
 					<a href="index.html"><div class="agilelogo">Panda  Annie</div></a>
 			</div>
-			<div class="wthreecontact">
-				<p><a class="scroll" href="#aitscontactw3l"><i class="fa fa-envelope-o" aria-hidden="true"></i> {% trans "CONTACT" %}</a></p>
-			</div>
+			<ul class="wthreecontact">
+				<p>
+
+                {% if user.is_authenticated %}
+                        {% if num_unread_notifications > 0 %}
+                            {# If user has new notifications - we change account link to go to inbox #}
+                            <a href="{% url 'customer:notifications-inbox' %}">
+                                <i class="icon-user"></i>
+                                {% trans "Account" %}
+                                <span class="label label-important">{{ num_unread_notifications }}</span>
+                            </a>
+                        {% else %}
+                            <a href="{% url 'customer:summary' %}"><i class="icon-user"></i> {% trans "Account" %}</a>
+                        {% endif %}
+                    {% if user.is_staff or perms.partner.dashboard_access %}
+                        <a href="{% url 'dashboard:index' %}"><i class="icon-list-ul"></i> {% trans "Dashboard" %}</a>
+                    {% endif %}
+                    <a id="logout_link" href="{% url 'customer:logout' %}"><i class="icon-signout"></i> {% trans "Logout" %}</a>
+                {% else %}
+                    <a id="login_link" href="{% url 'customer:login' %}"><i class="icon-signin"></i> {% trans "Login or register" %}</a>
+                {% endif %}
+				</p>
+			</ul>
 			<div class="clearfix"></div>
 		</div>
 		<!-- //Navigation -->
