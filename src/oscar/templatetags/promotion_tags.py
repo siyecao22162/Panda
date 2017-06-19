@@ -14,8 +14,9 @@ class PromotionNode(Node):
                                     'promotions/default.html'])
         args = {'promotion': promotion}
         args.update(**promotion.template_context(request=context['request']))
-        ctx = RequestContext(context['request'], args)
-        return template.render(ctx)
+        # ctx = RequestContext(context['request'], args)
+        # return template.render(ctx)
+        return template.render(args, context['request'])
 
 
 def get_promotion_html(parser, token):
