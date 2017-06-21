@@ -1,6 +1,7 @@
 import os
 import environ
 import oscar
+from django.utils.translation import ugettext_lazy as _
 
 env = environ.Env()
 
@@ -361,6 +362,24 @@ OSCAR_FROM_EMAIL = 'pandaannielai@gmail.com'
 
 # Hidden Oscar features, e.g. wishlists or reviews
 OSCAR_HIDDEN_FEATURES = ["reviews", "wishlists"]
+
+OSCAR_DASHBOARD_NAVIGATION += [
+    {
+        'label': _('Email'),
+        'children': [
+            {
+                'label': _('Broadcast email'),
+                'url_name': 'broadcast',
+                'access_fn': lambda user, url_name, url_args, url_kwargs: user.is_staff,
+            },
+            {
+                'label': _('Email templates'),
+                'url_name': 'dashboard:comms-list',
+            },
+        ]
+    },
+]
+
 
 OSCAR_RECENTLY_VIEWED_PRODUCTS = 20
 OSCAR_ALLOW_ANON_CHECKOUT = True

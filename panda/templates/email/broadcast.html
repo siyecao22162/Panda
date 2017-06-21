@@ -1,0 +1,31 @@
+{% extends 'dashboard/layout.html' %}
+
+
+{% load i18n %}
+
+{% block body_class %}{{ block.super }} orders{% endblock %}
+
+{% block title %}
+    {% trans "Orders" %} | {{ block.super }}
+{% endblock %}
+
+{% block breadcrumbs %}
+    <ul class="breadcrumb">
+        <li>
+            <a href="{% url 'dashboard:index' %}">{% trans "Dashboard" %}</a>
+        </li>
+        <li class="active">{% trans "Broadcast Email" %}</li>
+    </ul>
+{% endblock %}
+
+
+{% block dashboard_content %}
+
+    <form method="post" action="." class="form-stacked">
+		<h3>{% trans " Press the below button to broadcast email to all registered customer." %}</h3>
+        {% csrf_token %}
+		<button type="submit" class="btn btn-primary btn-lg" name="broadcast_email" data-loading-text="{% trans 'Sending...' %}">{% trans "Broadcast email" %}</button>
+
+    </form>
+
+{% endblock dashboard_content %}
