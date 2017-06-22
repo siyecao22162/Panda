@@ -1,0 +1,829 @@
+
+{% load i18n %}
+{% load staticfiles %}
+<!-- Head -->
+<head>
+
+<title>Panda Annie: Personal cuisine. Chinese food, Asian food, etc</title>
+
+<!-- Meta-Tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="Panda Annie a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Meta-Tags -->
+
+<!-- Custom-Stylesheet-Links -->
+<!-- Bootstrap-CSS --> 	<link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}"		type="text/css" media="all">
+<!-- Index-Page-CSS --> <link rel="stylesheet" href="{% static 'home/css/style.css' %}"			type="text/css" media="all">
+<!-- FontAwesome-CSS --><link rel="stylesheet" href="{% static 'home/css/font-awesome.min.css' %}"	type="text/css" media="all">
+<!-- Navigation-CSS --> <link rel="stylesheet" href="{% static 'home/css/menu_sideslide.css' %}"	type="text/css" media="all">
+<!-- OwlCarousel-CSS --><link rel="stylesheet" href="{% static 'home/css/owl.carousel.css' %}"		type="text/css" media="all">
+<!-- Portfolio-CSS -->	<link rel="stylesheet" href="{% static 'home/css/swipebox.css' %}"			type="text/css" media="all">
+<!-- //Custom-Stylesheet-Links -->
+
+<!-- Fonts -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans:400,700"			   type="text/css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700"			   type="text/css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700" type="text/css" media="all">
+<!-- //Fonts -->
+
+</head>
+<!-- //Head -->
+
+
+
+<!-- Body -->
+<body>
+
+
+	<!-- Header -->
+	<div class="aitsheaderw3ls" id="agilehome">
+
+		<!-- Navigation -->
+		<div class="agiletopbar">
+			<div class="wthreenavigation">
+				<div class="menu-wrap">
+					<nav class="menu">
+						<div class="icon-list">
+							<a class="scroll active" href="#agilehome"><i class="fa fa-home"></i><span>Home</span></a>
+							<a class="scroll" href="#sl3waboutstia"><i class="fa fa-info"></i><span>{% trans "About" %}</span></a>
+							<a  href="catalogue/"><i class="fa fa-birthday-cake"></i><span>{% trans "ALL PRODUCTS" %}</span></a>
+                            <!--
+							<a class="scroll" href="#portfolio"><i class="fa fa-picture-o"></i><span>Portfolio</span></a>
+							<a class="scroll" href="#w3lsstatsaits"><i class="fa fa-bar-chart"></i><span>Stats</span></a>
+							<a class="scroll" href="#chefw3agile"><i class="fa fa-user"></i><span>Chefs</span></a>
+							<a class="scroll" href="#agileinfofeedback"><i class="fa fa-comment-o"></i><span>Feedback</span></a>
+
+							<a class="scroll" href="#newsletter"><i class="fa fa-envelope-o"></i><span>Subscribe</span></a>
+							                      -->
+							<a class="scroll" href="#aitscontactw3l"><i class="fa fa-phone"></i><span>Contact</span></a>
+						</div>
+					</nav>
+					<button class="close-button" id="close-button">Close Menu</button>
+				</div>
+				<button class="menu-button" id="open-button">Open Menu</button>
+			</div>
+			<div class="agileinfomenu">
+				<p>{% trans "MENU" %}</p>
+			</div>
+			<div class="aitslogow3ls">
+					<a href="index.html"><div class="agilelogo">Panda  Annie</div></a>
+			</div>
+			<ul class="wthreecontact">
+				<p>
+
+                {% if user.is_authenticated %}
+                        {% if num_unread_notifications > 0 %}
+                            {# If user has new notifications - we change account link to go to inbox #}
+                            <a href="{% url 'customer:notifications-inbox' %}">
+                                <i class="icon-user"></i>
+                                {% trans "Account" %}
+                                <span class="label label-important">{{ num_unread_notifications }}</span>
+                            </a>
+                        {% else %}
+                            <a href="{% url 'customer:summary' %}"><i class="icon-user"></i> {% trans "Account" %}</a>
+                        {% endif %}
+                    {% if user.is_staff or perms.partner.dashboard_access %}
+                        <a href="{% url 'dashboard:index' %}"><i class="icon-list-ul"></i> {% trans "Dashboard" %}</a>
+                    {% endif %}
+                    <a id="logout_link" href="{% url 'customer:logout' %}"><i class="icon-signout"></i> {% trans "Logout" %}</a>
+                {% else %}
+                    <a id="login_link" href="{% url 'customer:login' %}"><i class="icon-signin"></i> {% trans "Login or register" %}</a>
+                {% endif %}
+				</p>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<!-- //Navigation -->
+
+
+
+		<!-- Slider -->
+		<div class="slider">
+			<ul class="rslides" id="slider">
+				<li>
+					<img src="{% static 'home/images/slide-1.jpg' %}" alt="Panda  Annie">
+				</li>
+				<li>
+					<img src="{% static 'home/images/slide-2.jpg' %}" alt="Panda  Annie">
+				</li>
+				<li>
+					<img src="{% static 'home/images/slide-3.jpg' %}" alt="Panda  Annie">
+				</li>
+				<li>
+					<img src="{% static 'home/images/slide-4.jpg' %}" alt="Panda  Annie">
+				</li>
+                <!--
+				<li>
+					<img src="{% static 'home/images/slide-5.jpg' %}" alt="Panda  Annie">
+				</li>
+-->
+			</ul>
+		</div>
+		<!-- //Slider -->
+
+	</div>
+	<!-- //Header -->
+
+
+
+	<!-- About -->
+	<div class="sl3waboutstia" id="sl3waboutstia">
+		<div class="container">
+			<h1>ABOUT US</h1>
+
+			<div class="sl3waboutstia-grids">
+				<div class="col-md-4 col-sm-4 sl3waboutstia-grid sl3waboutstia-grid-1">
+					<h3>Homemade Cuisine.</h3>
+					<p>balalabalala . I'm a paragraph.TODO.</p>
+				</div>
+				<div class="col-md-4 col-sm-4 sl3waboutstia-grid sl3waboutstia-grid-2">
+					<h3>Our Specialization</h3>
+					<ul>
+						<li class="agilecake"><a href="catalogue/category/day-menu/">DAY MENU</a></li>
+						<li class="w3pastry"><a href="catalogue/category/party-serving/">PARTY</a></li>
+						<li class="aitschocow3ls"><a href="catalogue/category/food-in-packs/">FOOD IN PACK</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-4 sl3waboutstia-grid sl3waboutstia-grid-3">
+					<img src="{% static 'home/images/about.jpg' %}" alt="Panda Annie">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+		</div>
+	</div>
+	<!-- //About -->
+
+
+
+	<!-- Stats -->
+    <!--
+	<div class="w3lsstatsaits" id="w3lsstatsaits">
+		<div class="container">
+			<h2>STATS</h2>
+
+			<div class="w3lsstatsaits-info">
+				<div class="col-md-3 col-sm-3 w3lsstatsaits-grid w3lsstatsaits-grid-1">
+					<div class="w3lsstatsaits-img">
+						<img src="{% static 'home/images/stats-1.png" alt="Corsa Racer">
+					</div>
+					<div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='9000' data-delay='.5' data-increment=4>9000</div>
+					<p>Happy Clients</p>
+				</div>
+				<div class="col-md-3 col-sm-3 w3lsstatsaits-grid w3lsstatsaits-grid-2">
+					<div class="w3lsstatsaits-img">
+						<img src="{% static 'home/images/stats-2.png" alt="Corsa Racer">
+					</div>
+					<div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='17000' data-delay='8' data-increment="1">17000</div>
+					<p>Cakes Baked</p>
+				</div>
+				<div class="col-md-3 col-sm-3 w3lsstatsaits-grid w3lsstatsaits-grid-3">
+					<div class="w3lsstatsaits-img">
+						<img src="{% static 'home/images/stats-3.png" alt="Corsa Racer">
+					</div>
+					<div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='12000' data-delay='.5' data-increment="11">12000</div>
+					<p>Orders</p>
+				</div>
+				<div class="col-md-3 col-sm-3 w3lsstatsaits-grid w3lsstatsaits-grid-4">
+					<div class="w3lsstatsaits-img">
+						<img src="{% static 'home/images/stats-4.png" alt="Corsa Racer">
+					</div>
+					<div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='169' data-delay='8' data-increment="1">169</div>
+					<p>Awards</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+		</div>
+	</div>
+	<!-- //Stats -->
+
+
+
+	<!-- Desserts -->
+	<div class="wthreedesserts" id="wthreedesserts">
+		<h3>POPULAR DISH</h3>
+
+		<!-- Owl-Carousel -->
+		<div id="owl-demo" class="owl-carousel text-center">
+			<div class="item">
+				<img class="lazyOwl" src="{% static 'home/images/gallery-1.jpg' %}" alt="Panda Annie">
+			</div>
+			<div class="item">
+				<img class="lazyOwl" src="{% static 'home/images/gallery-2.jpg' %}" alt="Panda Annie">
+			</div>
+			<div class="item">
+				<img class="lazyOwl" src="{% static 'home/images/gallery-3.jpg' %}" alt="Panda Annie">
+			</div>
+			<div class="item">
+				<img class="lazyOwl" src="{% static 'home/images/gallery-4.jpg' %}" alt="Panda Annie">
+			</div>
+			<div class="item">
+				<img class="lazyOwl" src="{% static 'home/images/gallery-5.jpg' %}" alt="Panda Annie">
+			</div>
+			<div class="item">
+				<img class="lazyOwl" src="{% static 'home/images/gallery-6.jpg' %}" alt="Panda Annie">
+			</div>
+			<div class="item">
+				<img class="lazyOwl" src="{% static 'home/images/gallery-7.jpg' %}" alt="Panda Annie">
+			</div>
+			<div class="item">
+				<img class="lazyOwl" src="{% static 'home/images/gallery-8.jpg' %}" alt="Panda Annie">
+			</div>
+			<div class="item">
+				<img class="lazyOwl" src="{% static 'home/images/gallery-9.jpg' %}" alt="Panda Annie">
+			</div>
+		</div>
+		<!-- //Owl-Carousel -->
+
+	</div>
+	<!-- //Desserts -->
+
+
+
+	<!-- Portfolio -->
+    <!--
+	<div class="portfolio" id="portfolio">
+			<div class="container">
+			<h3>PORTFOLIO</h3>
+
+			<div class="tabs tabs-style-bar">
+				<nav>
+					<ul>
+						<li><a href="#section-bar-1" class="icon icon-box"><span>DAY MENU</span></a></li>
+						<li><a href="#section-bar-2" class="icon icon-display"><span>PARTY SERVING</span></a></li>
+						<li><a href="#section-bar-3" class="icon icon-upload"><span>PACKED FOOD</span></a></li>
+					</ul>
+				</nav>
+
+				<div class="content-wrap">
+
+					<!-- Tab-1 -->
+     <!--
+					<section id="section-bar-1" class="agileits w3layouts">
+						<div class="gallery-grids">
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/cake-1.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/cake-1.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/cake-2.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/cake-2.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/cake-3.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/cake-3.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/cake-4.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/cake-4.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/cake-5.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/cake-5.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/cake-6.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/cake-6.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/cake-7.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/cake-7.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/cake-8.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/cake-8.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/cake-9.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/cake-9.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</section>
+					<!-- //Tab-1 -->
+
+					<!-- Tab-2 -->
+     <!--
+					<section id="section-bar-2" class="agileits w3layouts">
+						<div class="gallery-grids">
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/pastry-1.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/pastry-1.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/pastry-2.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/pastry-2.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/pastry-3.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/pastry-3.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/pastry-4.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/pastry-4.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/pastry-5.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/pastry-5.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/pastry-6.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/pastry-6.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/pastry-7.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/pastry-7.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/pastry-8.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/pastry-8.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/pastry-9.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/pastry-9.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</section>
+					<!-- //Tab-2 -->
+
+					<!-- Tab-3 -->
+     <!--
+					<section id="section-bar-3" class="agileits w3layouts">
+						<div class="gallery-grids">
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/choco-1.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/choco-1.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/choco-2.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/choco-2.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/choco-3.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/choco-3.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/choco-4.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/choco-4.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/choco-5.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/choco-5.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/choco-6.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/choco-6.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/choco-7.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/choco-7.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/choco-8.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/choco-8.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 gallery-top">
+								<a href="{% static 'home/images/choco-9.jpg' %}" class="swipebox">
+									<figure class="effect-apollo">
+										<img src="{% static 'home/images/choco-9.jpg' %}" alt="Panda Annie" class="img-responsive">
+										<figcaption></figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</section>
+					<!-- //Tab-3 -->
+	 <!--
+				</div><!-- //Content -->
+     <!--
+			</div><!-- //Tabs -->
+ <!--
+		</div>
+	</div>
+	<!-- //Portfolio -->
+
+
+
+	<!-- Chefs -->
+     <!--
+	<div class="chefw3agile" id="chefw3agile">
+		<div class="container">
+			<h3>OUR CHEF</h3>
+
+			<div class="chefw3agile-grids">
+				<div class="col-md-4 col-sm-4 chefw3agile-grid">
+					<div class="pic">
+						<div class="stack twisted">
+							<img src="{% static 'home/images/chef-1.jpg' %}" alt="Panda Annie" class="img-responsive">
+						</div>
+						<div class="pic-caption top-to-bottom">
+							<h4>Jean Réno</h4>
+							<!-- Social-Icons -->
+     <!--
+							<div class="social wthree">
+								<ul class="social-icons agileinfo">
+									<li><a href="#" class="facebook w3ls" title="Go to Our Facebook Page"><i class="fa w3ls fa-facebook-square" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="twitter w3l" title="Go to Our Twitter Account"><i class="fa w3l fa-twitter-square" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="googleplus w3" title="Go to Our Google Plus Account"><i class="fa w3 fa-google-plus-square" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="instagram wthree" title="Go to Our Instagram Account"><i class="fa wthree fa-instagram" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<!-- //Social-Icons -->
+     <!--
+						</div>
+					</div>
+				</div>
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+		</div>
+	</div>
+	<!-- //Chefs -->
+
+
+
+	<!-- Feedback -->
+    <!--
+	<div class="agileinfofeedback" id="agileinfofeedback">
+		<div class="container">
+			<h3>CUSTOMER FEEDBACK</h3>
+
+			<!-- Slider1 -->
+    <!--
+			<div class="slider-1 w3layouts agileits">
+				<ul class="rslides w3layouts agileits" id="slider1">
+					<li>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<h4>John Doe</h4>
+					</li>
+					<li>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet Neque porro.</p>
+						<h4>Jane Doe</h4>
+					</li>
+					<li>
+						<p>Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur quisquam est qui dolor.</p>
+						<h4>Jack Doe</h4>
+					</li>
+					<li>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo ipsum quia sit.</p>
+						<h4>Jill Doe</h4>
+					</li>
+					<li>
+						<p>Minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat amet, consectetur, adipisci velitium.</p>
+						<h4>James Doe</h4>
+					</li>
+				</ul>
+			</div>
+			<!-- //Slider1 -->
+<!--
+		</div>
+	</div>
+	<!-- //Feedback -->
+
+
+
+	<!-- Newsletter -->
+    <!-- TODO: add newsletter function
+	<div class="newsletter" id="newsletter">
+		<div class="container">
+			<div class="new-grids">
+				<div class="col-md-5 col-sm-5 newsletter-grid newsletter-grid-1 subscribe">
+					<p>Subscribe to our Newsletter</p>
+				</div>
+				<div class="col-md-7 col-sm-7 newsletter-grid newsletter-grid-2 email-form">
+					<form action="#" method="post">
+						<input class="email" type="email" name="Email" placeholder="Email Address" required="">
+						<input type="submit" class="submit" value="SUBSCRIBE">
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	-->
+	<!-- //Newsletter -->
+
+
+
+	<!-- Contact -->
+
+
+	<div class="aitscontactw3l" id="aitscontactw3l">
+		<div class="container">
+			<h3>GET IN TOUCH</h3>
+
+			<form action="#" method="post" class="aitscontactw3l-grids">
+				<div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-1">
+					<input class="fill fill-top" type="text" name="Name" placeholder="Name" required="">
+					<input class="fill" type="email" name="Email" placeholder="Email" required="">
+				</div>
+				<div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-2">
+					<input class="fill fill-top" type="tel" name="Phone" placeholder="Phone">
+					<input class="fill" type="text" name="Place" placeholder="Place">
+				</div>
+				<div class="col-md-6 col-sm-6 aitscontactw3l-grid aitscontactw3l-grid-3">
+					<textarea class="fill message" name="Message" placeholder="Message" required=""></textarea>
+					<input class="submit" type="submit" name="Send" value="SEND">
+				</div>
+				<div class="clearfix"></div>
+			</form>
+
+		</div>
+	</div>
+	<!-- //Contact -->
+
+
+
+	<!-- Map -->
+    <!--
+		<div id="map"></div>
+	<!-- //Map -->
+
+
+
+	<!-- Footer -->
+	<div class="footer">
+		<div class="container">
+
+			<div class="footer-top">
+				<div class="footer-grids">
+					<div class="col-md-4 col-sm-4 address">
+						<h5>Address</h5>
+							<ul>
+								<li>13600,</li>
+								<li>La Ciotat</li>
+								<li>France</li>
+							</ul>
+					</div>
+					<div class="col-md-4 col-sm-4 contact">
+						<h5>Contact</h5>
+						<div class="phone">
+							<ul>
+								<li>+1 234 456 7890</li>
+								<li>Mail : <a href="mailto:panda_annie@yahoo.com">panda_annie@yahoo.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 connect">
+						<h5>Follow</h5>
+						<!-- Social-Icons -->
+						<div class="social wthree">
+							<ul class="social-icons agileinfo">
+								<li><a href="#" class="facebook w3ls" title="Go to Our Facebook Page"><i class="fa w3ls fa-facebook-square" aria-hidden="true"></i></a></li>
+								<li><a href="#" class="twitter w3l" title="Go to Our Twitter Account"><i class="fa w3l fa-twitter-square" aria-hidden="true"></i></a></li>
+                                <!--
+								<li><a href="#" class="googleplus w3" title="Go to Our Google Plus Account"><i class="fa w3 fa-google-plus-square" aria-hidden="true"></i></a></li>
+								<li><a href="#" class="instagram wthree" title="Go to Our Instagram Account"><i class="fa wthree fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#" class="youtube w3layouts" title="Go to Our Youtube Channel"><i class="fa w3layouts fa-youtube-square" aria-hidden="true"></i></a></li>
+                                -->
+							</ul>
+						</div>
+						<!-- //Social-Icons -->
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="footer-bottom">
+					<div class="col-md-6 col-sm-6 footer-bottom-grid footer-nav">
+						<ul>
+							<li><a href="#agilehome">Home</a></li>
+							<li><a href="#sl3waboutstia">About</a></li>
+							<li><a href="#wthreedesserts">Specials</a></li>
+                            <!--
+							<li><a href="#portfolio">Portfolio</a></li>
+-->
+							<li><a href="#aitscontactw3l">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-sm-6 footer-bottom-grid copyright">
+						<p>&copy; 2017 Panda Annie. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank"> W3layouts </a><a href="#agilehome" class="scroll" title="To Top"><i class="fa fa-level-up" aria-hidden="true"></i></a></p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- //Footer -->
+
+
+
+	<!-- Custom-JavaScript-File-Links -->
+
+		<!-- Default-JavaScript -->   <script type="text/javascript" src="{% static 'home/js/jquery-2.1.4.min.js' %}"></script>
+		<!-- Bootstrap-JavaScript --> <script type="text/javascript" src="{% static 'home/js/bootstrap.min.js' %}"></script>
+
+		<!-- Navigation-JavaScript -->
+			<script src="{% static 'home/js/classie.js' %}"></script>
+			<script src="{% static 'home/js/main.js' %}"></script>
+		<!-- //Navigation-JavaScript -->
+
+		<!-- Slider-JavaScript -->
+			<script src="{% static 'home/js/responsiveslides.min.js' %}"></script>
+			<script>
+				$(function () {
+					$("#slider, #slider1").responsiveSlides({
+						auto: true,
+						nav: true,
+						speed: 1500,
+						namespace: "callbacks",
+						pager: true,
+					});
+				});
+			</script>
+		<!-- //Slider-JavaScript -->
+
+		<!-- Owl-Carousel-JavaScript -->
+			<script src="{% static 'home/js/owl.carousel.js' %}"></script>
+			<script>
+			$(document).ready(function() {
+				$("#owl-demo").owlCarousel ({
+					items : 4,
+					lazyLoad : true,
+					autoPlay :true,
+					pagination : false,
+				});
+			});
+			</script>
+		<!-- //Owl-Carousel-JavaScript -->
+
+		<!-- Gallery-Tab-JavaScript -->
+			<script src="{% static 'home/js/cbpFWTabs.js' %}"></script>
+			<script>
+				(function() {
+					[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+						new CBPFWTabs( el );
+					});
+				})();
+			</script>
+		<!-- //Gallery-Tab-JavaScript -->
+
+		<!-- Swipe-Box-JavaScript -->
+			<script src="{% static 'home/js/jquery.swipebox.min.js' %}"></script>
+				<script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+			</script>
+		<!-- //Swipe-Box-JavaScript -->
+
+		<!-- Stats-Number-Scroller-Animation-JavaScript -->
+			<script src="{% static 'home/js/waypoints.min.js' %}"></script>
+			<script src="{% static 'home/js/counterup.min.js' %}"></script>
+			<script>
+				jQuery(document).ready(function( $ ) {
+					$('.counter').counterUp({
+						delay: 10,
+						time: 1000
+					});
+				});
+			</script>
+		<!-- //Stats-Number-Scroller-Animation-JavaScript -->
+
+		<!-- Map-JavaScript -->
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+			<script type="text/javascript">
+				google.maps.event.addDomListener(window, 'load', init);
+				function init() {
+					var mapOptions = {
+						zoom: 11,
+						center: new google.maps.LatLng(40.6700, -73.9400),
+						styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+					};
+					var mapElement = document.getElementById('map');
+					var map = new google.maps.Map(mapElement, mapOptions);
+					var marker = new google.maps.Marker({
+						position: new google.maps.LatLng(40.6700, -73.9400),
+						map: map,
+					});
+				}
+			</script>
+		<!-- //Map-JavaScript -->
+
+		<!-- Smooth-Scrolling-JavaScript -->
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
+			</script>
+		<!-- //Smooth-Scrolling-JavaScript -->
+
+	<!-- //Custom-JavaScript-File-Links -->
+
+
+
+</body>
+<!-- //Body -->

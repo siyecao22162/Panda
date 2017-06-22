@@ -12,6 +12,7 @@ from oscar.views import handler403, handler404, handler500
 
 from apps.gateway import urls as gateway_urls
 from apps.email import urls as email_urls
+from apps.homepage import urls as homepage_urls
 from apps.sitemaps import base_sitemaps
 
 admin.autodiscover()
@@ -37,7 +38,8 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     # Custom functionality to allow dashboard users to be created
     url(r'gateway/', include(gateway_urls)),
-    url(r'email/', include(email_urls)),
+    url(r'^email/', include(email_urls)),
+    url(r'^home/', include(homepage_urls)),
     # Oscar's normal URLs
     url(r'^', application.urls),
 )
