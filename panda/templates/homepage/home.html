@@ -2,6 +2,7 @@
 {% load i18n %}
 {% load staticfiles %}
 {% load category_tags %}
+{% load promotion_tags %}
 
 <!-- Head -->
 <head>
@@ -212,8 +213,21 @@
 	<!-- Desserts -->
 	<div class="wthreedesserts" id="wthreedesserts">
 		<h3>POPULAR DISH</h3>
+        <div class="container-fluid page">
+            <div class="page_inner">
+                <div class="content">
+                    {# Render promotions #}
+                    <div id="promotions">
+                        {% for promotion in promotions_page %}
+                            {% render_promotion promotion %}
+                        {% endfor %}
+                    </div>
 
-		<!-- Owl-Carousel -->
+                </div>
+            </div>
+        </div>
+
+		<!-- Owl-Carousel
 		<div id="owl-demo" class="owl-carousel text-center">
 			<div class="item">
 				<img class="lazyOwl" src="{% static 'home/images/gallery-1.jpg' %}" alt="Panda Annie">
@@ -620,7 +634,6 @@
 	</div>
 	-->
 	<!-- //Newsletter -->
-
 
 
 	<!-- Contact -->
