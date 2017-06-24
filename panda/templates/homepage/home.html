@@ -1,6 +1,8 @@
 
 {% load i18n %}
 {% load staticfiles %}
+{% load category_tags %}
+
 <!-- Head -->
 <head>
 
@@ -138,14 +140,19 @@
 					<h3>Homemade Cuisine.</h3>
 					<p>balalabalala . I'm a paragraph.TODO.</p>
 				</div>
-				<div class="col-md-4 col-sm-4 sl3waboutstia-grid sl3waboutstia-grid-2">
-					<h3>Our Specialization</h3>
-					<ul>
-						<li class="agilecake"><a href="catalogue/category/day-menu/">DAY MENU</a></li>
-						<li class="w3pastry"><a href="catalogue/category/party-serving/">PARTY</a></li>
-						<li class="aitschocow3ls"><a href="catalogue/category/food-in-packs/">FOOD IN PACK</a></li>
-					</ul>
-				</div>
+
+                <div class="col-md-4 col-sm-4 sl3waboutstia-grid sl3waboutstia-grid-2">
+                   <h3>Our Specialization</h3>
+                   <ul>
+                        {% category_tree depth=2 as tree_categories %}
+                        {% if tree_categories %}
+                            {% for tree_category, info in tree_categories %}
+                                <li class="agilecake"><a href="{{ tree_category.get_absolute_url }}">{{ tree_category.name }}</a></li>
+                            {% endfor %}
+                        {% endif %}
+                   </ul>
+                </div>
+
 				<div class="col-md-4 col-sm-4 sl3waboutstia-grid sl3waboutstia-grid-3">
 					<img src="{% static 'home/images/about.jpg' %}" alt="Panda Annie">
 				</div>
