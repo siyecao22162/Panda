@@ -352,6 +352,7 @@ from oscar.defaults import *
 OSCAR_SHOP_NAME = 'Panda'
 OSCAR_SHOP_TAGLINE = 'Annie'
 OSCAR_HOMEPAGE = reverse_lazy('homepage')
+OSCAR_PRODUCTS_PER_PAGE = 8
 
 # email setup
 EMAIL_HOST = 'smtp.gmail.com'
