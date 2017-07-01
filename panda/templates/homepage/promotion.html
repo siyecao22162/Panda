@@ -1,0 +1,20 @@
+{% load currency_filters %}
+{% load basket_tags %}
+{% load thumbnail %}
+{% load i18n %}
+{% load staticfiles %}
+
+		<!-- Owl-Carousel -->
+		<div id="owl-demo" class="owl-carousel text-center">
+            {% for product in products %}
+                {% with image=product.primary_image %}
+                    {% thumbnail image.original "400x400" upscale=False as thumb %}
+                <div class="item">
+                        <a href="{{ product.get_absolute_url }}"><img class="lazyOwl" src="{{ thumb.url }}" alt="{{ product.get_title }}"></a>
+                    {% endthumbnail %}
+                {% endwith %}
+                </div>
+            {% endfor %}
+        </div>
+		<!-- //Owl-Carousel -->
+

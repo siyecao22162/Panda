@@ -280,6 +280,7 @@ INSTALLED_APPS = [
     # Debug toolbar + extensions
     'debug_toolbar',
     'apps.gateway',     # For allowing dashboard access
+    'apps.homepage',
     'widget_tweaks',
 ] + oscar.get_core_apps()
 
