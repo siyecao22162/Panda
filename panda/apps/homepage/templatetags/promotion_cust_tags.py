@@ -13,7 +13,8 @@ class PromotionNode(Node):
         template = select_template(['homepage/promotion.html'])
         args = {'promotions': promotions, 'products': []}
         for promotion in promotions:
-            args['products'].append(promotion.product)
+            if hasattr(promotion, 'product'):
+                args['products'].append(promotion.product)
             # args.update(**promotion.template_context(request=context['request']))
         # ctx = RequestContext(context['request'], args)
         # return template.render(ctx)
