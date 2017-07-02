@@ -31,7 +31,6 @@
 }
 
 #swipebox-slider .slide {
-  background: url(../images/loader.gif) no-repeat center center;
   height: 100%;
   line-height: 1px;
   text-align: center;
@@ -90,8 +89,6 @@
 #swipebox-action #swipebox-prev, #swipebox-action #swipebox-next,
 #swipebox-action #swipebox-close {
   display: block;
-  background-image: url(../images/icons.png);
-  background-repeat: no-repeat;
   border: none!important;
   text-decoration: none!important;
   cursor: pointer;

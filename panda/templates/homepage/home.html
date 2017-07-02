@@ -173,7 +173,9 @@
                 <div class="content">
                     {# Render promotions #}
                     <div id="promotions">
-                        {% render_promotion promotions_page %}
+                        {% if promotions_page %}
+                            {% render_promotion promotions_page %}
+                        {% endif %}
                     </div>
 
                 </div>
