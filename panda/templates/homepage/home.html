@@ -71,7 +71,7 @@
 				<p>{% trans "MENU" %}</p>
 			</div>
 			<div class="aitslogow3ls">
-					<a href="index.html"><div class="agilelogo">Panda  Annie</div></a>
+					<a href="{% url 'homepage' %}"><div class="agilelogo">Panda  Annie</div></a>
 			</div>
 			<ul class="wthreecontact">
 				<p>
@@ -106,16 +106,16 @@
 		<div class="slider">
 			<ul class="rslides" id="slider">
 				<li>
-					<img src="{% static 'home/images/slide-1.jpg' %}" alt="Panda  Annie">
+                    <a href="{% url 'promotions:home' %}"> <img src="{% static 'home/images/slide-1.jpg' %}" alt="Panda  Annie"></a>
 				</li>
 				<li>
-					<img src="{% static 'home/images/slide-2.jpg' %}" alt="Panda  Annie">
+					<a href="{% url 'promotions:home' %}"> <img src="{% static 'home/images/slide-2.jpg' %}" alt="Panda  Annie"></a>
 				</li>
 				<li>
-					<img src="{% static 'home/images/slide-3.jpg' %}" alt="Panda  Annie">
+					<a href="{% url 'promotions:home' %}"> <img src="{% static 'home/images/slide-3.jpg' %}" alt="Panda  Annie"></a>
 				</li>
 				<li>
-					<img src="{% static 'home/images/slide-4.jpg' %}" alt="Panda  Annie">
+					<a href="{% url 'promotions:home' %}"> <img src="{% static 'home/images/slide-4.jpg' %}" alt="Panda  Annie"></a>
 				</li>
                 <!--
 				<li>
