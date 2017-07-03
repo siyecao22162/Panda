@@ -39,7 +39,7 @@ urlpatterns += i18n_patterns(
     # Custom functionality to allow dashboard users to be created
     url(r'gateway/', include(gateway_urls)),
     url(r'^email/', include(email_urls)),
-    url(r'^$', include(homepage_urls)),
+    url(r'^', include(homepage_urls)),
     # Oscar's normal URLs
     url(r'^', application.urls),
 )

@@ -280,6 +280,7 @@ INSTALLED_APPS = [
     # Debug toolbar + extensions
     'debug_toolbar',
     'apps.gateway',     # For allowing dashboard access
+    'apps.homepage',
     'widget_tweaks',
 ] + oscar.get_core_apps()
 
@@ -353,6 +354,7 @@ OSCAR_SHOP_NAME = 'Panda'
 OSCAR_SHOP_TAGLINE = 'Annie'
 OSCAR_HOMEPAGE = reverse_lazy('homepage')
 OSCAR_PRODUCTS_PER_PAGE = 8
+OSCAR_DEFAULT_CURRENCY = 'EUR'
 
 # email setup
 EMAIL_HOST = 'smtp.gmail.com'
