@@ -45,6 +45,11 @@
                             <li><a tabindex="-1" href="{% url 'catalogue:index' %}">{% trans "All products" %}</a></li>
                             {% if tree_categories %}
                                 <li class="divider"></li>
+                                {% block nav_customize %}
+                                    <li><a href="{% url 'promotion' %}">{% trans "On sale" %}</a></li>
+                                {% endblock %}
+
+                                <li class="divider"></li>
                                 {% for tree_category, info in tree_categories %}
                                     {% if info.has_children %}
                                         <li class="dropdown-submenu">
