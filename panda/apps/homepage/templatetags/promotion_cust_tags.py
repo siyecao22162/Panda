@@ -10,7 +10,7 @@ class PromotionNode(Node):
 
     def render(self, context):
         promotions = self.promotion_var.resolve(context)
-        template = select_template(['homepage/promotion.html'])
+        template = select_template(['homepage/gallery.html'])
         args = {'promotions': promotions, 'products': []}
         for promotion in promotions:
             if hasattr(promotion, 'product'):

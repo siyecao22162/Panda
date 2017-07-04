@@ -9,3 +9,9 @@ class HomePageView(TemplateView):
     active_tab = 'Home Page'
 
 
+class PromotionPageView(TemplateView):
+    template_name = 'homepage/promotion.html'
+    page_title = _('Promotion Page')
+    active_tab = 'Promotion Page'
+
+

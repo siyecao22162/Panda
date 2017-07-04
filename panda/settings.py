@@ -86,7 +86,7 @@ LANGUAGES = (
     # ('ru', gettext_noop('Russian')),
     # ('sk', gettext_noop('Slovak')),
     # ('uk', gettext_noop('Ukrainian')),
-    ('zh-cn', gettext_noop('Simplified Chinese')),
+    # ('zh-cn', gettext_noop('Simplified Chinese')),
 )
 
 SITE_ID = 1
