@@ -30,18 +30,17 @@ def msg_sent(request):
         phone = form.cleaned_data['phone']
         message = form.cleaned_data['message']
 
-        msg = get_template('gateway/email.txt').render(Context({
+        msg = get_template('homepage/email.txt').render(Context({
             'name': name,
             'place': place,
             'phone': phone,
             'email': email,
             'message': message
         }))
-        print(name)
+        print("Sending email" + msg)
 
-        recipients = ['nkannielai@gmail.com']
-        send_mail('New message from user',
+        recipients = ['pandaannielai@gmail.com']
+        send_mail('You got a message from user',
                   msg, email,
                   recipients)
-
-    return render(request, 'homepage/msg_sent.html', {'form': form})
+        return render(request, 'homepage/msg_sent.html', {'form': form})

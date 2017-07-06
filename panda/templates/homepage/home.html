@@ -1,4 +1,3 @@
-
 {% load i18n %}
 {% load staticfiles %}
 {% load category_tags %}
@@ -218,40 +217,49 @@
 	</div>
 	<!-- //Desserts -->
 
-	<!-- Contact -->
+    <!-- Contact -->
 
-	<div class="aitscontactw3l" id="aitscontactw3l">
-		<div class="container">
-			<h3>GET IN TOUCH</h3>
-			<form action="msg_sent" method="post" class="aitscontactw3l-grids">
-                {% csrf_token %}
-				<div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-1">
-					<input class="fill fill-top" id="name" type="text" name="Name" placeholder="Name" required>
-					<input class="fill" id="email" type="email" name="Email" placeholder="Email" required>
-				</div>
-				<div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-2">
-					<input class="fill fill-top" id="phone" type="tel" name="Phone" placeholder="Phone">
-					<input class="fill" id="place" type="text" name="Place" placeholder="Place">
-				</div>
-				<div class="col-md-6 col-sm-6 aitscontactw3l-grid aitscontactw3l-grid-3">
-					<textarea class="fill message" id="message" name="Message" placeholder="Message" required></textarea>
-					<input class="submit" type="submit" name="Send" value="SEND">
-				</div>
+ <div class="aitscontactw3l" id="aitscontactw3l">
+    <div class="container">
+        <h3>GET IN TOUCH</h3>
+        <form action="msg_sent" method="post" class="aitscontactw3l-grids">
+            {% csrf_token %}
+            <div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-1">
+                {{ form.name.errors }}
+                <input class="fill fill-top" type="text" name="name" placeholder="name" required>
+                {{ form.name }}
+                {{ form.email.errors }}
+                <input class="fill" type="email" name="email" placeholder="email" required>
+                {{ form.email }}
+            </div>
+            <div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-2">
+                {{ form.phone.errors }}
+                <input class="fill fill-top" type="tel" name="phone" placeholder="phone">
+                {{ form.phone }}
+                {{ form.place.errors }}
+                <input class="fill" type="text" name="place" placeholder="place">
+                {{ form.place }}
+            </div>
+            <div class="col-md-6 col-sm-6 aitscontactw3l-grid aitscontactw3l-grid-3">
+                {{ form.message.errors }}
+                <input class="fill message" type="textarea" name="message" placeholder="message" required>
+                {{ form.message }}
+                <input class="submit" type="submit" name="Send" value="SEND">
+            </div>
 
-				<div class="clearfix"></div>
-			</form>
 
-		</div>
-	</div>
-	<!-- //Contact -->
+            <div class="clearfix"></div>
+        </form>
+
+    </div>
+</div>
+<!-- //Contact -->
 
 
-
-	<!-- Map -->
-    <!--
-		<div id="map"></div>
-	<!-- //Map -->
-
+<!-- Map -->
+<!--
+    <div id="map"></div>
+<!-- //Map -->
 
 
 	<!-- Footer -->
