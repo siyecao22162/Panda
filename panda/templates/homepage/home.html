@@ -223,20 +223,21 @@
 	<div class="aitscontactw3l" id="aitscontactw3l">
 		<div class="container">
 			<h3>GET IN TOUCH</h3>
-
-			<form action="#" method="post" class="aitscontactw3l-grids">
+			<form action="msg_sent" method="post" class="aitscontactw3l-grids">
+                {% csrf_token %}
 				<div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-1">
-					<input class="fill fill-top" type="text" name="Name" placeholder="Name" required="">
-					<input class="fill" type="email" name="Email" placeholder="Email" required="">
+					<input class="fill fill-top" id="name" type="text" name="Name" placeholder="Name" required>
+					<input class="fill" id="email" type="email" name="Email" placeholder="Email" required>
 				</div>
 				<div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-2">
-					<input class="fill fill-top" type="tel" name="Phone" placeholder="Phone">
-					<input class="fill" type="text" name="Place" placeholder="Place">
+					<input class="fill fill-top" id="phone" type="tel" name="Phone" placeholder="Phone">
+					<input class="fill" id="place" type="text" name="Place" placeholder="Place">
 				</div>
 				<div class="col-md-6 col-sm-6 aitscontactw3l-grid aitscontactw3l-grid-3">
-					<textarea class="fill message" name="Message" placeholder="Message" required=""></textarea>
+					<textarea class="fill message" id="message" name="Message" placeholder="Message" required></textarea>
 					<input class="submit" type="submit" name="Send" value="SEND">
 				</div>
+
 				<div class="clearfix"></div>
 			</form>
 
