@@ -13,6 +13,7 @@ DEBUG = env.bool('DEBUG', default=True)
 SQL_DEBUG = DEBUG
 
 ALLOWED_HOSTS = [
+    '*',
     # 'latest.oscarcommerce.com',
     # 'master.oscarcommerce.com',
     # 'localhost',
