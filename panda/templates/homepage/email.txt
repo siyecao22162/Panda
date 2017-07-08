@@ -1,0 +1,17 @@
+{% load i18n %}
+{% blocktrans %}
+There is one new message from customer, sent from "GET IN TOUCH":
+
+- Name: {{ name }}
+- Phone: {{ phone }}
+- Email: {{ email }}
+- Place: {{ place }}
+
+Message as below:
+{{ place }}
+
+
+
+Best wishes,
+
+{% endblocktrans %}
