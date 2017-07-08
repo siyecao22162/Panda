@@ -2,6 +2,7 @@
 {% load staticfiles %}
 {% load category_tags %}
 {% load promotion_cust_tags %}
+{% load widget_tweaks %}
 
 <!-- Head -->
 <head>
@@ -183,68 +184,27 @@
             </div>
         </div>
 
-		<!-- Owl-Carousel
-		<div id="owl-demo" class="owl-carousel text-center">
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-1.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-2.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-3.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-4.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-5.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-6.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-7.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-8.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-9.jpg' %}" alt="Panda Annie">
-			</div>
-		</div>
-		<!-- //Owl-Carousel -->
 
 	</div>
-	<!-- //Desserts -->
+
 
     <!-- Contact -->
 
  <div class="aitscontactw3l" id="aitscontactw3l">
     <div class="container">
         <h3>GET IN TOUCH</h3>
-        <form action="msg_sent" method="post" class="aitscontactw3l-grids">
+        <form action="" method="post" class="aitscontactw3l-grids">
             {% csrf_token %}
             <div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-1">
-                {{ form.name.errors }}
-                <input class="fill fill-top" type="text" name="name" placeholder="name" required>
-                {{ form.name }}
-                {{ form.email.errors }}
-                <input class="fill" type="email" name="email" placeholder="email" required>
-                {{ form.email }}
+                {% render_field form.name class+="fill fill-top" placeholder="name" %}
+                {% render_field form.email class+="fill" placeholder="email" %}
             </div>
             <div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-2">
-                {{ form.phone.errors }}
-                <input class="fill fill-top" type="tel" name="phone" placeholder="phone">
-                {{ form.phone }}
-                {{ form.place.errors }}
-                <input class="fill" type="text" name="place" placeholder="place">
-                {{ form.place }}
+                {% render_field form.phone class+="fill fill-top" placeholder="phone" %}
+                {% render_field form.place class+="fill" placeholder="place" %}
             </div>
             <div class="col-md-6 col-sm-6 aitscontactw3l-grid aitscontactw3l-grid-3">
-                {{ form.message.errors }}
-                <input class="fill message" type="textarea" name="message" placeholder="message" required>
-                {{ form.message }}
+                {% render_field form.message class+="fill message" placeholder="message" %}
                 <input class="submit" type="submit" name="Send" value="SEND">
             </div>
 
