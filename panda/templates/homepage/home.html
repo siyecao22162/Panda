@@ -1,8 +1,8 @@
-
 {% load i18n %}
 {% load staticfiles %}
 {% load category_tags %}
 {% load promotion_cust_tags %}
+{% load widget_tweaks %}
 
 <!-- Head -->
 <head>
@@ -31,6 +31,7 @@
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700" type="text/css" media="all">
 <!-- //Fonts -->
 
+<link rel="shortcut icon" href="{% static "oscar/favicon.ico" %}" />
 </head>
 <!-- //Head -->
 
@@ -115,14 +116,6 @@
 				<li>
 					<a href="{% url 'promotion' %}"> <img src="{% static 'home/images/slide-3.jpg' %}" alt="Panda  Annie"></a>
 				</li>
-				<li>
-					<a href="{% url 'promotion' %}"> <img src="{% static 'home/images/slide-4.jpg' %}" alt="Panda  Annie"></a>
-				</li>
-                <!--
-				<li>
-					<img src="{% static 'home/images/slide-5.jpg' %}" alt="Panda  Annie">
-				</li>
--->
 			</ul>
 		</div>
 		<!-- //Slider -->
@@ -183,74 +176,43 @@
             </div>
         </div>
 
-		<!-- Owl-Carousel
-		<div id="owl-demo" class="owl-carousel text-center">
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-1.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-2.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-3.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-4.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-5.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-6.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-7.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-8.jpg' %}" alt="Panda Annie">
-			</div>
-			<div class="item">
-				<img class="lazyOwl" src="{% static 'home/images/gallery-9.jpg' %}" alt="Panda Annie">
-			</div>
-		</div>
-		<!-- //Owl-Carousel -->
 
 	</div>
-	<!-- //Desserts -->
-
-	<!-- Contact -->
-
-	<div class="aitscontactw3l" id="aitscontactw3l">
-		<div class="container">
-			<h3>GET IN TOUCH</h3>
-
-			<form action="#" method="post" class="aitscontactw3l-grids">
-				<div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-1">
-					<input class="fill fill-top" type="text" name="Name" placeholder="Name" required="">
-					<input class="fill" type="email" name="Email" placeholder="Email" required="">
-				</div>
-				<div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-2">
-					<input class="fill fill-top" type="tel" name="Phone" placeholder="Phone">
-					<input class="fill" type="text" name="Place" placeholder="Place">
-				</div>
-				<div class="col-md-6 col-sm-6 aitscontactw3l-grid aitscontactw3l-grid-3">
-					<textarea class="fill message" name="Message" placeholder="Message" required=""></textarea>
-					<input class="submit" type="submit" name="Send" value="SEND">
-				</div>
-				<div class="clearfix"></div>
-			</form>
-
-		</div>
-	</div>
-	<!-- //Contact -->
 
 
+    <!-- Contact -->
 
-	<!-- Map -->
-    <!--
-		<div id="map"></div>
-	<!-- //Map -->
+ <div class="aitscontactw3l" id="aitscontactw3l">
+    <div class="container">
+        <h3>GET IN TOUCH</h3>
+        <form action="" method="post" class="aitscontactw3l-grids">
+            {% csrf_token %}
+            <div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-1">
+                {% render_field form.name class+="fill fill-top" placeholder="name" %}
+                {% render_field form.email class+="fill" placeholder="email" %}
+            </div>
+            <div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-2">
+                {% render_field form.phone class+="fill fill-top" placeholder="phone" %}
+                {% render_field form.place class+="fill" placeholder="place" %}
+            </div>
+            <div class="col-md-6 col-sm-6 aitscontactw3l-grid aitscontactw3l-grid-3">
+                {% render_field form.message class+="fill message" placeholder="message" %}
+                <input class="submit" type="submit" name="Send" value="SEND">
+            </div>
 
+
+            <div class="clearfix"></div>
+        </form>
+
+    </div>
+</div>
+<!-- //Contact -->
+
+
+<!-- Map -->
+<!--
+    <div id="map"></div>
+<!-- //Map -->
 
 
 	<!-- Footer -->
