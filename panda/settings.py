@@ -276,13 +276,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
     'django_extensions',
+    'paypal',
 
     # Debug toolbar + extensions
     'debug_toolbar',
     'apps.gateway',     # For allowing dashboard access
     'apps.homepage',
     'widget_tweaks',
-] + oscar.get_core_apps()
+] + oscar.get_core_apps(['apps.checkout'])
 
 # Add Oscar's custom auth backend so users can sign in using their email
 # address.
@@ -452,6 +453,11 @@ THUMBNAIL_KVSTORE = env(
 THUMBNAIL_REDIS_URL = env('THUMBNAIL_REDIS_URL', default=None)
 
 
+# paypal
+PAYPAL_API_USERNAME = 'miles_christian-facilitator_api1.yahoo.com'
+PAYPAL_API_PASSWORD = 'RG9EEQAJWJX3GJ64'
+PAYPAL_API_SIGNATURE = 'AFcWxV21C7fd0v3bYYYRCpSSRl31A1eNzWXz..XVaqH9CAx8fMEECwTi'
+
 # Django 1.6 has switched to JSON serializing for security reasons, but it does not
 # serialize Models. We should resolve this by extending the
 # django/core/serializers/json.Serializer to have the `dumps` function. Also
@@ -463,3 +469,4 @@ try:
     from settings_local import *
 except ImportError:
     pass
+
