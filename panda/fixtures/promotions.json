@@ -3,12 +3,15 @@
     "model": "promotions.pagepromotion",
     "pk": 1,
     "fields": {
-        "content_type": 83,
+        "content_type": [
+		"promotions",
+		"singleproduct"
+	],
         "object_id": 7,
         "position": "page",
         "display_order": 0,
         "clicks": 0,
-        "date_created": "2017-07-09T15:10:57.876Z",
+        "date_created": "2017-07-09T15:10:57.886Z",
         "page_url": "/en-gb/"
     }
 },
@@ -16,7 +19,11 @@
     "model": "promotions.pagepromotion",
     "pk": 2,
     "fields": {
-        "content_type": 83,
+        "content_type": [
+                "promotions",
+                "singleproduct"
+        ],
+
         "object_id": 1,
         "position": "page",
         "display_order": 0,
@@ -29,7 +36,10 @@
     "model": "promotions.pagepromotion",
     "pk": 3,
     "fields": {
-        "content_type": 83,
+        "content_type": [
+                "promotions",
+                "singleproduct"
+        ],
         "object_id": 2,
         "position": "page",
         "display_order": 0,
@@ -42,7 +52,10 @@
     "model": "promotions.pagepromotion",
     "pk": 4,
     "fields": {
-        "content_type": 83,
+        "content_type": [
+                "promotions",
+                "singleproduct"
+        ],
         "object_id": 3,
         "position": "page",
         "display_order": 0,
@@ -55,7 +68,10 @@
     "model": "promotions.pagepromotion",
     "pk": 5,
     "fields": {
-        "content_type": 83,
+        "content_type": [
+                "promotions",
+                "singleproduct"
+        ],
         "object_id": 4,
         "position": "page",
         "display_order": 0,
@@ -68,7 +84,10 @@
     "model": "promotions.pagepromotion",
     "pk": 6,
     "fields": {
-        "content_type": 83,
+        "content_type": [
+                "promotions",
+                "singleproduct"
+        ],
         "object_id": 6,
         "position": "page",
         "display_order": 0,
@@ -81,7 +100,10 @@
     "model": "promotions.pagepromotion",
     "pk": 7,
     "fields": {
-        "content_type": 83,
+        "content_type": [
+                "promotions",
+                "singleproduct"
+        ],
         "object_id": 5,
         "position": "page",
         "display_order": 0,
@@ -94,7 +116,10 @@
     "model": "promotions.pagepromotion",
     "pk": 8,
     "fields": {
-        "content_type": 83,
+        "content_type": [
+                "promotions",
+                "singleproduct"
+        ],
         "object_id": 8,
         "position": "page",
         "display_order": 0,
@@ -107,7 +132,10 @@
     "model": "promotions.pagepromotion",
     "pk": 9,
     "fields": {
-        "content_type": 83,
+        "content_type": [
+                "promotions",
+                "singleproduct"
+        ],
         "object_id": 9,
         "position": "page",
         "display_order": 0,
@@ -120,7 +148,10 @@
     "model": "promotions.pagepromotion",
     "pk": 10,
     "fields": {
-        "content_type": 83,
+        "content_type": [
+                "promotions",
+                "singleproduct"
+        ],
         "object_id": 10,
         "position": "page",
         "display_order": 0,
@@ -156,7 +187,7 @@
         "name": "popular dish 3",
         "product": 23,
         "description": "",
-        "date_created": "2017-07-09T15:07:44.483Z"
+        "date_created": "2017-07-09T15:07:44.488Z"
     }
 },
 {
@@ -190,6 +221,7 @@
     }
 },
 {
+
     "model": "promotions.singleproduct",
     "pk": 7,
     "fields": {
