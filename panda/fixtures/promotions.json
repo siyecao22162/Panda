@@ -1,17 +1,53 @@
 [
 {
     "model": "promotions.pagepromotion",
-    "pk": 4,
+    "pk": 1,
     "fields": {
-        "content_type": [
-            "promotions",
-            "rawhtml"
-        ],
+        "content_type": 83,
+        "object_id": 7,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-09T15:10:57.876Z",
+        "page_url": "/en-gb/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 2,
+    "fields": {
+        "content_type": 83,
         "object_id": 1,
         "position": "page",
         "display_order": 0,
         "clicks": 0,
-        "date_created": "2014-05-06T10:31:06.444Z",
+        "date_created": "2017-07-09T15:11:22.026Z",
+        "page_url": "/en-gb/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 3,
+    "fields": {
+        "content_type": 83,
+        "object_id": 2,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-09T15:11:40.300Z",
+        "page_url": "/en-gb/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 4,
+    "fields": {
+        "content_type": 83,
+        "object_id": 3,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-09T15:12:01.662Z",
         "page_url": "/en-gb/"
     }
 },
@@ -19,15 +55,12 @@
     "model": "promotions.pagepromotion",
     "pk": 5,
     "fields": {
-        "content_type": [
-            "promotions",
-            "singleproduct"
-        ],
-        "object_id": 1,
+        "content_type": 83,
+        "object_id": 4,
         "position": "page",
         "display_order": 0,
         "clicks": 0,
-        "date_created": "2014-05-06T10:31:23.577Z",
+        "date_created": "2017-07-09T15:12:06.305Z",
         "page_url": "/en-gb/"
     }
 },
@@ -35,83 +68,165 @@
     "model": "promotions.pagepromotion",
     "pk": 6,
     "fields": {
-        "content_type": [
-            "promotions",
-            "handpickedproductlist"
-        ],
-        "object_id": 1,
+        "content_type": 83,
+        "object_id": 6,
         "position": "page",
         "display_order": 0,
         "clicks": 0,
-        "date_created": "2014-05-06T10:31:55.034Z",
+        "date_created": "2017-07-09T15:12:11.754Z",
         "page_url": "/en-gb/"
     }
 },
 {
-    "model": "promotions.rawhtml",
-    "pk": 1,
+    "model": "promotions.pagepromotion",
+    "pk": 7,
     "fields": {
-        "name": "Welcome!",
-        "display_type": "",
-        "body": "Welcome to Oscar's sandbox site.&nbsp; This is a example install of Oscar, making very few customisations to the core.&nbsp; It is intended as a playground for experimenting with Oscar's features.<br><br>You can get access to the dashboard <a href=\"http://latest.oscarcommerce.com/gateway/\" rel=\"nofollow\">using this form</a>.",
-        "date_created": "2013-01-08T17:12:09.526Z"
+        "content_type": 83,
+        "object_id": 5,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-09T15:13:26.917Z",
+        "page_url": "/en-gb/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 8,
+    "fields": {
+        "content_type": 83,
+        "object_id": 8,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-09T15:14:02.252Z",
+        "page_url": "/en-gb/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 9,
+    "fields": {
+        "content_type": 83,
+        "object_id": 9,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-09T15:15:44.734Z",
+        "page_url": "/en-gb/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 10,
+    "fields": {
+        "content_type": 83,
+        "object_id": 10,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-09T15:16:49.656Z",
+        "page_url": "/en-gb/"
     }
 },
 {
     "model": "promotions.singleproduct",
     "pk": 1,
     "fields": {
-        "name": "Recommended reading",
-        "product": 89,
-        "description": "Commodo sed artisan before they sold out veniam aute sint you probably haven't heard of them pour-over, +1 delectus street art direct trade. Enim craft beer odd future single-origin coffee gluten-free artisan, salvia consectetur master cleanse vegan eiusmod carles. Yr proident ennui VHS, art party direct trade veniam est try-hard voluptate. Authentic irure aliqua, pariatur ad whatever sunt banjo esse letterpress plaid bicycle rights mollit quinoa you probably haven't heard of them. Farm-to-table keytar duis, craft beer carles lomo est accusamus single-origin coffee. Swag twee magna, literally meh cred cray. Aute deserunt ullamco, you probably haven't heard of them nisi synth DIY food truck.<br>",
-        "date_created": "2013-01-08T17:14:56.664Z"
+        "name": "popular dish 1",
+        "product": 26,
+        "description": "",
+        "date_created": "2017-07-09T15:06:32.614Z"
     }
 },
 {
-    "model": "promotions.handpickedproductlist",
-    "pk": 1,
-    "fields": {
-        "name": "Other good books",
-        "description": "Commodo sed artisan before they sold out veniam aute sint you probably haven't heard of them pour-over, +1 delectus street art direct trade. Enim craft beer odd future single-origin coffee gluten-free artisan, salvia consectetur master cleanse vegan eiusmod carles. Yr proident ennui VHS, art party direct trade veniam est try-hard voluptate. Authentic irure aliqua, pariatur ad whatever sunt banjo esse letterpress plaid bicycle rights mollit quinoa you probably haven't heard of them. Farm-to-table keytar duis, craft beer carles lomo est accusamus single-origin coffee. Swag twee magna, literally meh cred cray. Aute deserunt ullamco, you probably haven't heard of them nisi synth DIY food truck.<br><br>",
-        "link_url": "",
-        "link_text": "",
-        "date_created": "2013-01-08T17:19:57.759Z"
-    }
-},
-{
-    "model": "promotions.orderedproduct",
-    "pk": 1,
-    "fields": {
-        "list": 1,
-        "product": 25,
-        "display_order": 0
-    }
-},
-{
-    "model": "promotions.orderedproduct",
+    "model": "promotions.singleproduct",
     "pk": 2,
     "fields": {
-        "list": 1,
-        "product": 51,
-        "display_order": 0
+        "name": "popular dish 2",
+        "product": 24,
+        "description": "",
+        "date_created": "2017-07-09T15:07:16.671Z"
     }
 },
 {
-    "model": "promotions.orderedproduct",
+    "model": "promotions.singleproduct",
     "pk": 3,
     "fields": {
-        "list": 1,
-        "product": 95,
-        "display_order": 0
+        "name": "popular dish 3",
+        "product": 23,
+        "description": "",
+        "date_created": "2017-07-09T15:07:44.483Z"
     }
 },
 {
-    "model": "promotions.orderedproduct",
+    "model": "promotions.singleproduct",
     "pk": 4,
     "fields": {
-        "list": 1,
-        "product": 13,
-        "display_order": 0
+        "name": "popular dish 4",
+        "product": 16,
+        "description": "",
+        "date_created": "2017-07-09T15:08:17.535Z"
+    }
+},
+{
+    "model": "promotions.singleproduct",
+    "pk": 5,
+    "fields": {
+        "name": "popular dish 5",
+        "product": 15,
+        "description": "",
+        "date_created": "2017-07-09T15:08:55.626Z"
+    }
+},
+{
+    "model": "promotions.singleproduct",
+    "pk": 6,
+    "fields": {
+        "name": "popular dish 6",
+        "product": 7,
+        "description": "",
+        "date_created": "2017-07-09T15:09:23.625Z"
+    }
+},
+{
+    "model": "promotions.singleproduct",
+    "pk": 7,
+    "fields": {
+        "name": "popular dish 7",
+        "product": 11,
+        "description": "",
+        "date_created": "2017-07-09T15:10:11.772Z"
+    }
+},
+{
+    "model": "promotions.singleproduct",
+    "pk": 8,
+    "fields": {
+        "name": "popular dish 8",
+        "product": 27,
+        "description": "",
+        "date_created": "2017-07-09T15:13:57.625Z"
+    }
+},
+{
+    "model": "promotions.singleproduct",
+    "pk": 9,
+    "fields": {
+        "name": "popular dish 9",
+        "product": 18,
+        "description": "",
+        "date_created": "2017-07-09T15:15:38.203Z"
+    }
+},
+{
+    "model": "promotions.singleproduct",
+    "pk": 10,
+    "fields": {
+        "name": "popular dish 10",
+        "product": 8,
+        "description": "",
+        "date_created": "2017-07-09T15:16:42.696Z"
     }
 }
 ]
