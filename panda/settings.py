@@ -13,6 +13,7 @@ DEBUG = env.bool('DEBUG', default=True)
 SQL_DEBUG = DEBUG
 
 ALLOWED_HOSTS = [
+    '*',
     # 'latest.oscarcommerce.com',
     # 'master.oscarcommerce.com',
     # 'localhost',
@@ -75,7 +76,8 @@ LANGUAGES = (
     # ('el', gettext_noop('Greek')),
     # ('es', gettext_noop('Spanish')),
     # ('fi', gettext_noop('Finnish')),
-    ('fr', gettext_noop('French')),
+    # TODO: enable french page later
+    # ('fr', gettext_noop('French')),
     # ('it', gettext_noop('Italian')),
     # ('ko', gettext_noop('Korean')),
     # ('nl', gettext_noop('Dutch')),
@@ -86,7 +88,7 @@ LANGUAGES = (
     # ('ru', gettext_noop('Russian')),
     # ('sk', gettext_noop('Slovak')),
     # ('uk', gettext_noop('Ukrainian')),
-    ('zh-cn', gettext_noop('Simplified Chinese')),
+    # ('zh-cn', gettext_noop('Simplified Chinese')),
 )
 
 SITE_ID = 1
@@ -276,12 +278,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
     'django_extensions',
+    'paypal',
 
     # Debug toolbar + extensions
     'debug_toolbar',
     'apps.gateway',     # For allowing dashboard access
+    'apps.homepage',
     'widget_tweaks',
-] + oscar.get_core_apps()
+] + oscar.get_core_apps(['apps.checkout'])
 
 # Add Oscar's custom auth backend so users can sign in using their email
 # address.
@@ -291,7 +295,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 LOGIN_REDIRECT_URL = '/'
-APPEND_SLASH = True
+APPEND_SLASH = False
 
 # ====================
 # Messages contrib app
@@ -353,14 +357,15 @@ OSCAR_SHOP_NAME = 'Panda'
 OSCAR_SHOP_TAGLINE = 'Annie'
 OSCAR_HOMEPAGE = reverse_lazy('homepage')
 OSCAR_PRODUCTS_PER_PAGE = 8
+OSCAR_DEFAULT_CURRENCY = 'EUR'
 
 # email setup
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = os.environ.get('EMAIL_HOST')            # 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'pandaannielai@gmail.com'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')  # 'pandaannielai@gmail.com'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = True
-OSCAR_FROM_EMAIL = 'pandaannielai@gmail.com'
+OSCAR_FROM_EMAIL = EMAIL_HOST_USER
 
 # Hidden Oscar features, e.g. wishlists or reviews
 OSCAR_HIDDEN_FEATURES = ["reviews", "wishlists"]
@@ -450,6 +455,11 @@ THUMBNAIL_KVSTORE = env(
 THUMBNAIL_REDIS_URL = env('THUMBNAIL_REDIS_URL', default=None)
 
 
+# paypal
+PAYPAL_API_USERNAME = 'miles_christian-facilitator_api1.yahoo.com'
+PAYPAL_API_PASSWORD = 'RG9EEQAJWJX3GJ64'
+PAYPAL_API_SIGNATURE = 'AFcWxV21C7fd0v3bYYYRCpSSRl31A1eNzWXz..XVaqH9CAx8fMEECwTi'
+
 # Django 1.6 has switched to JSON serializing for security reasons, but it does not
 # serialize Models. We should resolve this by extending the
 # django/core/serializers/json.Serializer to have the `dumps` function. Also
@@ -461,3 +471,4 @@ try:
     from settings_local import *
 except ImportError:
     pass
+
