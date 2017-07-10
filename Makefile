@@ -3,6 +3,7 @@
 
 install:
 	pip install -r requirements.txt
+	pip install panda/libs/django-oscar-paypal-0.9.7.tar.gz
 	pip install -e .[test]
 
 build_panda:
