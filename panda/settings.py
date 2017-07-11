@@ -360,12 +360,14 @@ OSCAR_PRODUCTS_PER_PAGE = 8
 OSCAR_DEFAULT_CURRENCY = 'EUR'
 
 # email setup
-EMAIL_HOST = os.environ.get('EMAIL_HOST')            # 'smtp.gmail.com'
+EMAIL_HOST = os.environ.get('EMAIL_HOST')            # 'smtp.webfaction.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')  # 'pandaannielai@gmail.com'
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')  # 'nkannielai'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')   # 'annie@pandaannie.com'
 EMAIL_USE_TLS = True
-OSCAR_FROM_EMAIL = EMAIL_HOST_USER
+SERVER_EMAIL = DEFAULT_FROM_EMAIL
+OSCAR_FROM_EMAIL = DEFAULT_FROM_EMAIL
 
 # Hidden Oscar features, e.g. wishlists or reviews
 OSCAR_HIDDEN_FEATURES = ["reviews", "wishlists"]

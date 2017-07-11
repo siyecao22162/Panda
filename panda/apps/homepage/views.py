@@ -31,9 +31,9 @@ class HomePageView(FormView):
             'message': message
         }))
 
-        recipients = [settings.EMAIL_HOST_USER]
+        recipients = [settings.DEFAULT_FROM_EMAIL]
         send_mail('You got a message from user',
-                  msg, settings.EMAIL_HOST_USER,
+                  msg, settings.DEFAULT_FROM_EMAIL,
                   recipients)
         return super(HomePageView, self).form_valid(form)
 
