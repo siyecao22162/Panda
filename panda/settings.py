@@ -111,8 +111,11 @@ MEDIA_ROOT = location("public/media")
 MEDIA_URL = '/media/'
 
 STATIC_URL = '/static/'
-#STATIC_ROOT = location('public/static')
-STATIC_ROOT = "/home/nkannielai/webapps/static_media/"
+if os.environ.get('HOSTNAME') is not None and "webfaction" in os.environ.get('HOSTNAME'):
+    STATIC_ROOT = "/home/nkannielai/webapps/static_media/"
+else:
+    STATIC_ROOT = location('public/static')
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = (
     location('static/'),
