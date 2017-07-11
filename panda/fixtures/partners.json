@@ -1,0 +1,173 @@
+[
+{
+    "model": "partner.partner",
+    "pk": 1,
+    "fields": {
+        "code": "annie",
+        "name": "annie",
+        "users": []
+    }
+},
+{
+    "model": "partner.stockrecord",
+    "pk": 1,
+    "fields": {
+        "product": 35,
+        "partner": 1,
+        "partner_sku": "200100203",
+        "price_currency": "EUR",
+        "price_excl_tax": "39.06",
+        "price_retail": null,
+        "cost_price": null,
+        "num_in_stock": 20,
+        "num_allocated": null,
+        "low_stock_threshold": null,
+        "date_created": "2017-07-11T14:35:58.123Z",
+        "date_updated": "2017-07-11T14:35:58.123Z"
+    }
+},
+{
+    "model": "partner.stockrecord",
+    "pk": 2,
+    "fields": {
+        "product": 34,
+        "partner": 1,
+        "partner_sku": "200100202",
+        "price_currency": "EUR",
+        "price_excl_tax": "39.00",
+        "price_retail": null,
+        "cost_price": null,
+        "num_in_stock": 20,
+        "num_allocated": null,
+        "low_stock_threshold": 1,
+        "date_created": "2017-07-11T14:36:43.219Z",
+        "date_updated": "2017-07-11T14:36:43.220Z"
+    }
+},
+{
+    "model": "partner.stockrecord",
+    "pk": 3,
+    "fields": {
+        "product": 33,
+        "partner": 1,
+        "partner_sku": "200100201",
+        "price_currency": "EUR",
+        "price_excl_tax": "39.00",
+        "price_retail": null,
+        "cost_price": null,
+        "num_in_stock": 20,
+        "num_allocated": null,
+        "low_stock_threshold": 1,
+        "date_created": "2017-07-11T14:37:09.142Z",
+        "date_updated": "2017-07-11T14:37:09.142Z"
+    }
+},
+{
+    "model": "partner.stockrecord",
+    "pk": 4,
+    "fields": {
+        "product": 39,
+        "partner": 1,
+        "partner_sku": "100100802",
+        "price_currency": "EUR",
+        "price_excl_tax": "8.00",
+        "price_retail": null,
+        "cost_price": null,
+        "num_in_stock": 20,
+        "num_allocated": null,
+        "low_stock_threshold": 1,
+        "date_created": "2017-07-11T14:54:05.708Z",
+        "date_updated": "2017-07-11T14:54:05.708Z"
+    }
+},
+{
+    "model": "partner.stockrecord",
+    "pk": 5,
+    "fields": {
+        "product": 38,
+        "partner": 1,
+        "partner_sku": "100100801",
+        "price_currency": "EUR",
+        "price_excl_tax": "8.00",
+        "price_retail": null,
+        "cost_price": null,
+        "num_in_stock": 20,
+        "num_allocated": null,
+        "low_stock_threshold": 1,
+        "date_created": "2017-07-11T14:56:33.581Z",
+        "date_updated": "2017-07-11T14:56:33.581Z"
+    }
+},
+{
+    "model": "partner.stockrecord",
+    "pk": 6,
+    "fields": {
+        "product": 31,
+        "partner": 1,
+        "partner_sku": "100102304",
+        "price_currency": "EUR",
+        "price_excl_tax": "7.00",
+        "price_retail": null,
+        "cost_price": null,
+        "num_in_stock": 0,
+        "num_allocated": null,
+        "low_stock_threshold": null,
+        "date_created": "2017-07-11T14:58:18.232Z",
+        "date_updated": "2017-07-11T14:58:18.232Z"
+    }
+},
+{
+    "model": "partner.stockrecord",
+    "pk": 7,
+    "fields": {
+        "product": 30,
+        "partner": 1,
+        "partner_sku": "100102303",
+        "price_currency": "EUR",
+        "price_excl_tax": "7.00",
+        "price_retail": null,
+        "cost_price": null,
+        "num_in_stock": 0,
+        "num_allocated": null,
+        "low_stock_threshold": 1,
+        "date_created": "2017-07-11T14:58:23.885Z",
+        "date_updated": "2017-07-11T14:58:23.885Z"
+    }
+},
+{
+    "model": "partner.stockrecord",
+    "pk": 8,
+    "fields": {
+        "product": 29,
+        "partner": 1,
+        "partner_sku": "100102302",
+        "price_currency": "EUR",
+        "price_excl_tax": "7.00",
+        "price_retail": null,
+        "cost_price": null,
+        "num_in_stock": 0,
+        "num_allocated": null,
+        "low_stock_threshold": 1,
+        "date_created": "2017-07-11T14:58:49.616Z",
+        "date_updated": "2017-07-11T14:58:49.616Z"
+    }
+},
+{
+    "model": "partner.stockrecord",
+    "pk": 9,
+    "fields": {
+        "product": 28,
+        "partner": 1,
+        "partner_sku": "100102301",
+        "price_currency": "EUR",
+        "price_excl_tax": "7.00",
+        "price_retail": null,
+        "cost_price": null,
+        "num_in_stock": 0,
+        "num_allocated": null,
+        "low_stock_threshold": 1,
+        "date_created": "2017-07-11T14:59:02.998Z",
+        "date_updated": "2017-07-11T14:59:02.999Z"
+    }
+}
+]
