@@ -111,7 +111,8 @@ MEDIA_ROOT = location("public/media")
 MEDIA_URL = '/media/'
 
 STATIC_URL = '/static/'
-STATIC_ROOT = location('public/static')
+#STATIC_ROOT = location('public/static')
+STATIC_ROOT = "/home/nkannielai/webapps/static_media/"
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = (
     location('static/'),
