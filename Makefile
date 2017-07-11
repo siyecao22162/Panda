@@ -15,7 +15,7 @@ build_panda:
 	# Create database
 	panda/manage.py migrate
 	# Import some fixtures. Order is important as JSON fixtures include primary keys
-	#panda/manage.py loaddata panda/fixtures/child_products.json
+	panda/manage.py loaddata panda/fixtures/child_products.json
 	panda/manage.py oscar_import_catalogue panda/fixtures/*.csv
 	panda/manage.py oscar_import_catalogue_images panda/fixtures/images1.tar.gz
 	panda/manage.py oscar_import_catalogue_images panda/fixtures/images2.tar.gz
