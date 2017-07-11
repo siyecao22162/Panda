@@ -108,13 +108,13 @@
 		<div class="slider">
 			<ul class="rslides" id="slider">
 				<li>
-                    <a href="{% url 'promotion' %}"> <img src="{% static 'home/images/slide-1.jpg' %}" alt="Panda  Annie"></a>
+                    <a href="{% url 'promotion' %}"> <img title="Click to order" src="{% static 'home/images/slide-1.jpg' %}" alt="Panda  Annie"></a>
 				</li>
 				<li>
-					<a href="{% url 'promotion' %}"> <img src="{% static 'home/images/slide-2.jpg' %}" alt="Panda  Annie"></a>
+					<a href="{% url 'promotion' %}"> <img title="Click to order" src="{% static 'home/images/slide-2.jpg' %}" alt="Panda  Annie"></a>
 				</li>
 				<li>
-					<a href="{% url 'promotion' %}"> <img src="{% static 'home/images/slide-3.jpg' %}" alt="Panda  Annie"></a>
+					<a href="{% url 'promotion' %}"> <img title="Click to order" src="{% static 'home/images/slide-3.jpg' %}" alt="Panda  Annie"></a>
 				</li>
 			</ul>
 		</div>
@@ -128,8 +128,6 @@
 	<!-- About -->
 	<div class="sl3waboutstia" id="sl3waboutstia">
 		<div class="container">
-			<h1>ABOUT US</h1>
-
 			<div class="sl3waboutstia-grids">
 				<div class="col-md-4 col-sm-4 sl3waboutstia-grid sl3waboutstia-grid-1">
 					<h3>Homemade Cuisine.</h3>
@@ -138,22 +136,23 @@
 				</div>
 
                 <div class="col-md-4 col-sm-4 sl3waboutstia-grid sl3waboutstia-grid-2">
-                   <h3>Our Specialization</h3>
                    <ul>
                         {% category_tree depth=2 as tree_categories %}
                         {% if tree_categories %}
                             {% for tree_category, info in tree_categories %}
-                                <li class="agilecake"><a href="{{ tree_category.get_absolute_url }}">{{ tree_category.name }}</a></li>
+                       <li class="agilecake"><a href="{{ tree_category.get_absolute_url }}"><h3>{{ tree_category.name }}</h3></a></li>
                             {% endfor %}
                         {% endif %}
                    </ul>
                 </div>
 
 				<div class="col-md-4 col-sm-4 sl3waboutstia-grid sl3waboutstia-grid-3">
-					<img src="{% static 'home/images/about.jpg' %}" alt="Panda Annie">
+					<img title="Click to order" src="{% static 'home/images/about.jpg' %}" alt="Panda Annie">
 				</div>
 				<div class="clearfix"></div>
 			</div>
+
+
 
 		</div>
 	</div>
@@ -162,7 +161,7 @@
 
 	<!-- Desserts -->
 	<div class="wthreedesserts" id="wthreedesserts">
-		<h3>POPULAR DISH</h3>
+        <a href="{% url 'promotion' %}"><i><h3>PLACE ORDER</h3></i></a>\
         <div class="container-fluid page">
             <div class="page_inner">
                 <div class="content">
