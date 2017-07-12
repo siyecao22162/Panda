@@ -208,7 +208,28 @@ a.callbacks_nav {
 ul.callbacks_tabs {
 	display: none;
 }
+.w3-button a{
+	color: #fff;
+    padding: 0.8em 2em;
+    text-decoration: none;
+    margin: 0;
+	font-size: 1.3em;
+    border: 2px solid #FFC107;
+	background:none;
+	font-weight: 700;
+    text-transform: uppercase;
+}
+.w3-button a:hover{
+color:  #FFC107;
+border-color:#FFf;
 
+}
+.w3-button {
+    position: relative;
+    margin: 0;
+    padding: 2em;
+    z-index: 1;
+}
 /*-- //Slider --*/
 
 
