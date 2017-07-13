@@ -52,7 +52,7 @@
     "fields": {
         "range": 3,
         "type": "Percentage",
-        "value": "40.00",
+        "value": "30.00",
         "max_affected_items": null,
         "proxy_class": ""
     }
