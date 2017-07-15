@@ -51,17 +51,17 @@
 					<nav class="menu">
 						<div class="icon-list">
 							<a class="scroll active" href="#agilehome"><i class="fa fa-home"></i><span>Home</span></a>
-							<a class="scroll" href="#sl3waboutstia"><i class="fa fa-info"></i><span>{% trans "About" %}</span></a>
 							<a  href="{% url 'promotion' %}"><i class="fa fa-birthday-cake"></i><span>{% trans "On Sale" %}</span></a>
 						    <a  href="{% url 'catalogue:index' %}"><i class="fa fa-picture-o"></i><span>{% trans "All Products" %}</span></a>
+							<a href="{% url 'basket:summary' %}"><i class="fa fa-picture-o"></i><span>{% trans "View Basket" %}</span></a>
 							<!--
-							<a class="scroll" href="#portfolio"><i class="fa fa-picture-o"></i><span>Portfolio</span></a>
 							<a class="scroll" href="#w3lsstatsaits"><i class="fa fa-bar-chart"></i><span>Stats</span></a>
 							<a class="scroll" href="#chefw3agile"><i class="fa fa-user"></i><span>Chefs</span></a>
 							<a class="scroll" href="#agileinfofeedback"><i class="fa fa-comment-o"></i><span>Feedback</span></a>
 
 							<a class="scroll" href="#newsletter"><i class="fa fa-envelope-o"></i><span>Subscribe</span></a>
 							                      -->
+							<a class="scroll" href="#sl3waboutstia"><i class="fa fa-info"></i><span>{% trans "About" %}</span></a>
 							<a class="scroll" href="#aitscontactw3l"><i class="fa fa-phone"></i><span>Contact</span></a>
 						</div>
 					</nav>
@@ -138,7 +138,7 @@
 					<a href="/en-gb/about/" target="_blank"> <big>More Info</big></a>
 
 					<div class="w3-button">
-						<a  href="{% url 'promotion' %}">Order Now</a>
+					<a class="btn btn-default" href="{% url 'promotion' %}">{% trans "Order Now - 30% OFF" %}</a>
 					</div>
 				</div>
 
