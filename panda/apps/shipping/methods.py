@@ -5,9 +5,9 @@ from oscar.core import prices
 
 class StandardLunch(methods.Base):
     code = 'standard lunch'
-    name = 'Lunch Time Delivery'
+    name = 'Tomorrow Lunch Delivery'
 
-    charge_per_order = D('3')
+    charge_per_order = D('3.00')
     threshold = D('15.00')
 
     description = "Charge of delivery: 3€ (total < 15€); FREE (total >= 15€)"
@@ -29,10 +29,10 @@ class StandardLunch(methods.Base):
             incl_tax=total)
 
 class StandardDinner(methods.Base):
-    code = 'standar ddinner'
-    name = 'Diner Time Delivery'
+    code = 'standard dinner'
+    name = 'Tomorrow Diner Delivery'
 
-    charge_per_order = D('3')
+    charge_per_order = D('3.00')
     threshold = D('15.00')
 
     description = "Charge of delivery: 3€ (total < 15€); FREE (total >= 15€)"
