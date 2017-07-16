@@ -8,4 +8,4 @@ from . import methods as shipping_methods
 
 
 class Repository(repository.Repository):
-    methods = (shipping_methods.Standard(),)
+    methods = (shipping_methods.StandardLunch(),shipping_methods.StandardDinner())
