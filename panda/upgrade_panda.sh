@@ -2,9 +2,10 @@
 
 set -x
 cd ~/Panda
+git reset --hard
 git pull
 cd
-mv webapps/django/panda ./panda.`date +%Y%m%d%H%M%S`
+mv webapps/django/panda backups/panda.`date +%Y%m%d%H%M%S`
 cp -rf Panda webapps/django/panda
 cd webapps/django/panda/
 . ../env/bin/activate

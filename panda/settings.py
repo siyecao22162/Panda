@@ -289,7 +289,7 @@ INSTALLED_APPS = [
     'apps.gateway',     # For allowing dashboard access
     'apps.homepage',
     'widget_tweaks',
-] + oscar.get_core_apps(['apps.checkout', 'apps.order'])
+] + oscar.get_core_apps(['apps.checkout', 'apps.order', 'apps.shipping'])
 
 
 # Add Oscar's custom auth backend so users can sign in using their email

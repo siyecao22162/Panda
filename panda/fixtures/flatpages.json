@@ -1,0 +1,17 @@
+[
+{
+    "model": "flatpages.flatpage",
+    "pk": 1,
+    "fields": {
+        "url": "/en-gb/about/",
+        "title": "About",
+        "content": "<p><span style=\"font-size: 14pt; color: #339966;\">Who is Annie?</span></p>\r\n<p>Annie was a Chinese software engineer once, holding a master degree.</p>\r\n<p>But everyday after work, she just found more fun in cooking, while others were still working overtime debugging...</p>\r\n<p>So her husband, who is her NO.1 fan, suggest her, why don't you open your own restaurant?</p>\r\n<p>That's how you came to know Panda Annie.\u00a0</p>\r\n<p>\u00a0</p>\r\n<p><span style=\"font-size: 14pt; color: #339966;\">My Specialty?</span></p>\r\n<p>Technically, I think I am good at everything. HAHA. But Sichuan Food is my best.</p>\r\n<p>\u00a0</p>\r\n<p>\u00a0<span style=\"font-size: 14pt; color: #339966;\">How to deliver?</span></p>\r\n<p>Currently, I have to do delivery by myself.\u00a0<strong>Just to office.</strong>\u00a0Yes, you are right, i am the chef, the cook, the website developper and the delivery lady!\u00a0</p>\r\n<p>\"Why don't u hire someone to deliver?\" Please refer to chapter \"About License\".</p>\r\n<p>\u00a0</p>\r\n<p><span style=\"font-size: 14pt; color: #339966;\">Where do you get your sources?</span></p>\r\n<p>Most of them are from Carrefour (A cheaper supplier wanted!). Some ingredients are from Asian store.</p>\r\n<p>\u00a0</p>\r\n<p><span style=\"font-size: 14pt; color: #339966;\">How to contact me?</span></p>\r\n<p>Hmmm, that's a good question! Please find it on the home page of Panda Annie.</p>\r\n<p>\u00a0</p>\r\n<p><span style=\"font-size: 14pt; color: #ff0000;\">Last but not least,\u00a0enchant\u00e9!</span></p>",
+        "enable_comments": false,
+        "template_name": "",
+        "registration_required": false,
+        "sites": [
+            1
+        ]
+    }
+}
+]

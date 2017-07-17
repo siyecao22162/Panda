@@ -1,13 +1,27 @@
 [
 {
-    "model": "offer.benefit",
-    "pk": 1,
+    "model": "offer.conditionaloffer",
+    "pk": 4,
     "fields": {
-        "range": 1,
-        "type": "Multibuy",
-        "value": null,
-        "max_affected_items": null,
-        "proxy_class": ""
+        "name": "Offer for voucher 'Pre-opening discount'",
+        "slug": "offer-for-voucher-pre-opening-discount",
+        "description": "",
+        "offer_type": "Voucher",
+        "status": "Open",
+        "condition": 4,
+        "benefit": 4,
+        "priority": 0,
+        "start_datetime": null,
+        "end_datetime": null,
+        "max_global_applications": null,
+        "max_user_applications": null,
+        "max_basket_applications": null,
+        "max_discount": null,
+        "total_discount": "0.00",
+        "num_applications": 0,
+        "num_orders": 0,
+        "redirect_url": "",
+        "date_created": "2017-07-13T10:50:13.133Z"
     }
 },
 {
@@ -36,51 +50,10 @@
     "model": "offer.benefit",
     "pk": 4,
     "fields": {
-        "range": 1,
+        "range": 3,
         "type": "Percentage",
-        "value": "40.00",
-        "max_affected_items": 200,
-        "proxy_class": ""
-    }
-},
-{
-    "model": "offer.benefit",
-    "pk": 5,
-    "fields": {
-        "range": null,
-        "type": "Shipping fixed price",
-        "value": "1.99",
+        "value": "30.00",
         "max_affected_items": null,
-        "proxy_class": ""
-    }
-},
-{
-    "model": "offer.condition",
-    "pk": 1,
-    "fields": {
-        "range": 1,
-        "type": "Count",
-        "value": "3.00",
-        "proxy_class": ""
-    }
-},
-{
-    "model": "offer.condition",
-    "pk": 2,
-    "fields": {
-        "range": 1,
-        "type": "Count",
-        "value": "1.00",
-        "proxy_class": ""
-    }
-},
-{
-    "model": "offer.condition",
-    "pk": 3,
-    "fields": {
-        "range": 1,
-        "type": "Count",
-        "value": "1.00",
         "proxy_class": ""
     }
 },
@@ -88,54 +61,26 @@
     "model": "offer.condition",
     "pk": 4,
     "fields": {
-        "range": 1,
+        "range": 3,
         "type": "Count",
-        "value": "2.00",
-        "proxy_class": ""
-    }
-},
-{
-    "model": "offer.condition",
-    "pk": 5,
-    "fields": {
-        "range": 1,
-        "type": "Value",
-        "value": "10.00",
+        "value": "1.00",
         "proxy_class": ""
     }
 },
 {
     "model": "offer.range",
-    "pk": 1,
+    "pk": 3,
     "fields": {
-        "name": "Site",
-        "slug": "",
+        "name": "All Products",
+        "slug": "all-products",
         "description": "",
         "is_public": false,
         "includes_all_products": true,
         "proxy_class": "",
-        "date_created": "2013-02-21T15:26:09.651Z",
+        "date_created": "2017-07-13T10:49:13.522Z",
         "excluded_products": [],
         "classes": [],
         "included_categories": []
-    }
-},
-{
-    "model": "offer.range",
-    "pk": 2,
-    "fields": {
-        "name": "Fiction books",
-        "slug": "fiction-books",
-        "description": "",
-        "is_public": false,
-        "includes_all_products": false,
-        "proxy_class": "",
-        "date_created": "2013-02-21T16:25:38.805Z",
-        "excluded_products": [],
-        "classes": [],
-        "included_categories": [
-            2
-        ]
     }
 }
 ]
