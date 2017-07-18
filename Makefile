@@ -21,7 +21,7 @@ build_panda:
 	panda/manage.py oscar_import_catalogue_images panda/fixtures/images2.tar.gz
 	panda/manage.py oscar_populate_countries --initial-only
 	panda/manage.py loaddata panda/fixtures/pages.json panda/fixtures/auth.json panda/fixtures/vouchers.json panda/fixtures/offers.json
-	panda/manage.py loaddata panda/fixtures/promotions.json panda/fixtures/flatpages.json
+	panda/manage.py loaddata panda/fixtures/promotions.json panda/fixtures/flatpages.json panda/fixtures/country.json
 	#panda/manage.py loaddata panda/fixtures/orders.json
 	panda/manage.py clear_index --noinput
 	panda/manage.py update_index catalogue
