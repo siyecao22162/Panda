@@ -159,23 +159,6 @@
         "page_url": "/en-gb/"
     }
 },
-
-{
-    "model": "promotions.pagepromotion",
-    "pk": 16,
-    "fields": {
-        "content_type": [
-                "promotions",
-                "singleproduct"
-        ],
-        "object_id": 11,
-        "position": "page",
-        "display_order": 0,
-        "clicks": 0,
-        "date_created": "2017-07-19T09:36:53.329Z",
-        "page_url": "/en-gb/promotion/"
-    }
-},
 {
     "model": "promotions.pagepromotion",
     "pk": 12,
@@ -237,6 +220,113 @@
         "display_order": 0,
         "clicks": 0,
         "date_created": "2017-07-12T11:41:42.469Z",
+        "page_url": "/en-gb/promotion/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 16,
+    "fields": {
+        "content_type": [
+                "promotions",
+                "singleproduct"
+        ],
+        "object_id": 11,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-19T09:36:53.329Z",
+        "page_url": "/en-gb/promotion/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 17,
+    "fields": {
+        "content_type": 87,
+        "object_id": 16,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-19T13:57:25.829Z",
+        "page_url": "/en-gb/promotion/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 18,
+    "fields": {
+        "content_type": 85,
+        "object_id": 12,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-19T14:29:42.311Z",
+        "page_url": "/en-gb/promotion/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 19,
+    "fields": {
+        "content_type": 85,
+        "object_id": 15,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-19T14:30:20.098Z",
+        "page_url": "/en-gb/promotion/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 20,
+    "fields": {
+        "content_type": 85,
+        "object_id": 16,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-19T14:30:25.471Z",
+        "page_url": "/en-gb/promotion/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 21,
+    "fields": {
+        "content_type": 85,
+        "object_id": 14,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-19T14:30:58.138Z",
+        "page_url": "/en-gb/promotion/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 22,
+    "fields": {
+        "content_type": 85,
+        "object_id": 11,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-19T14:31:51.712Z",
+        "page_url": "/en-gb/promotion/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 23,
+    "fields": {
+        "content_type": 85,
+        "object_id": 13,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-19T14:32:17.666Z",
         "page_url": "/en-gb/promotion/"
     }
 },
@@ -344,9 +434,9 @@
     "model": "promotions.singleproduct",
     "pk": 11,
     "fields": {
-        "name": "Friday dish",
-        "product": 46,
-        "description": "<p>For 1 person.</p>\r\n<p>A most popular dish in China. Just as easy to find its restaurants as to find a beautiful girl in Beijing.</p>\r\n<p>Deliver this Monday Lunch and Dinner.\u00a0</p>",
+        "name": "Ready to book roast fish",
+        "product": 25,
+        "description": "<p>Party Serving. For 3 ~ 5 people.</p>\r\n<p>A most famous dish in China. Several flavor to choose from.</p>\r\n<p>Book at lease 2 days before your party time please</p>",
         "date_created": "2017-07-12T11:21:52.118Z"
     }
 },
@@ -354,9 +444,9 @@
     "model": "promotions.singleproduct",
     "pk": 12,
     "fields": {
-        "name": "Ready to book sausage",
-        "product": 27,
-        "description": "<p>Homemade Chinese sausage.\u00a0</p>\r\n<p>Deliver will be possible after 3 days.</p>",
+        "name": "Friday dish",
+        "product": 46,
+        "description": "<p>For 1 person.</p>\r\n<p>A most popular dish in China. Just as easy to find its restaurants as to find a beautiful girl in Beijing.</p>\r\n<p>Deliver this Monday Lunch and Dinner.\u00a0</p>",
         "date_created": "2017-07-12T11:25:59.141Z"
     }
 },
@@ -364,9 +454,9 @@
     "model": "promotions.singleproduct",
     "pk": 13,
     "fields": {
-        "name": "Ready to book hotpot",
-        "product": 26,
-        "description": "<p>For 4 to 6 people \u00a0</p>\r\n<p>Enjoy typical Chinese style party serving and fantastic flavor.</p>\r\n<p>Please book at least one day before party.</p>\r\n<p>\u00a0</p>",
+        "name": "Gift",
+        "product": 50,
+        "description": "<p>Drinks for main dish order. At a gift price.</p>\r\n<p>Please also add it into your basket.</p>",
         "date_created": "2017-07-12T11:28:20.108Z"
     }
 },
@@ -374,9 +464,9 @@
     "model": "promotions.singleproduct",
     "pk": 14,
     "fields": {
-        "name": "Ready to book roast fish",
-        "product": 25,
-        "description": "<p>For 3 ~ 5 people.</p>\r\n<p>A most famous dish in China. Several flavor to choose from.</p>\r\n<p>Book at lease 2 days before your party time please</p>",
+        "name": "Ready to book takoyaki",
+        "product": 8,
+        "description": "<p>Party Serving. A Japanese dish and quite popular in China.</p>\r\n<p>Everyone who tried my takoyaki said it's delicious.</p>\r\n<p>Maybe you can also have a try.</p>\r\n<p>Fresh made and fresh enjoyed. Only prepare on site.\u00a0</p>",
         "date_created": "2017-07-12T11:38:40.243Z"
     }
 },
@@ -384,10 +474,20 @@
     "model": "promotions.singleproduct",
     "pk": 15,
     "fields": {
-        "name": "Ready to book takoyaki",
-        "product": 8,
-        "description": "<p>A Japanese dish and quite popular in China.</p>\r\n<p>Everyone who tried my takoyaki said it's delicious.</p>\r\n<p>Maybe you can also have a try.</p>\r\n<p>Fresh made and fresh enjoyed. Only prepare on site.\u00a0</p>",
+        "name": "Ready to book sausage",
+        "product": 27,
+        "description": "<p>Packaged Food. Homemade Chinese sausage.\u00a0</p>\r\n<p>Deliver will be possible after 3 days.</p>",
         "date_created": "2017-07-12T11:41:23.954Z"
+    }
+},
+{
+    "model": "promotions.singleproduct",
+    "pk": 16,
+    "fields": {
+        "name": "Ready to book hotpot",
+        "product": 26,
+        "description": "<p>Party Serving. For 4 to 6 people \u00a0</p>\r\n<p>Enjoy typical Chinese style party serving and fantastic flavor.</p>\r\n<p>Please book at least one day before party.</p>\r\n<p>\u00a0</p>",
+        "date_created": "2017-07-19T13:57:17.929Z"
     }
 }
 ]
