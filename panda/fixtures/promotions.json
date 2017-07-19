@@ -159,9 +159,10 @@
         "page_url": "/en-gb/"
     }
 },
+
 {
     "model": "promotions.pagepromotion",
-    "pk": 11,
+    "pk": 16,
     "fields": {
         "content_type": [
                 "promotions",
@@ -171,7 +172,7 @@
         "position": "page",
         "display_order": 0,
         "clicks": 0,
-        "date_created": "2017-07-12T11:22:27.324Z",
+        "date_created": "2017-07-19T09:36:53.329Z",
         "page_url": "/en-gb/promotion/"
     }
 },
@@ -344,8 +345,8 @@
     "pk": 11,
     "fields": {
         "name": "Friday dish",
-        "product": 24,
-        "description": "<p>Fresh lettuce with sauce typically from China.</p>\r\n<p>An unforgetable experience is waiting for you.</p>\r\n<p>Order before Thursday night please. Free delivery to office is offered</p>",
+        "product": 46,
+        "description": "<p>For 1 person.</p>\r\n<p>A most popular dish in China. Just as easy to find its restaurants as to find a beautiful girl in Beijing.</p>\r\n<p>Deliver this Monday Lunch and Dinner.\u00a0</p>",
         "date_created": "2017-07-12T11:21:52.118Z"
     }
 },
@@ -355,7 +356,7 @@
     "fields": {
         "name": "Ready to book sausage",
         "product": 27,
-        "description": "<p>Homemade Chinese sausage.\u00a0</p>",
+        "description": "<p>Homemade Chinese sausage.\u00a0</p>\r\n<p>Deliver will be possible after 3 days.</p>",
         "date_created": "2017-07-12T11:25:59.141Z"
     }
 },
@@ -365,7 +366,7 @@
     "fields": {
         "name": "Ready to book hotpot",
         "product": 26,
-        "description": "<p>For both 4 to 6 people \u00a0</p>\r\n<p>Enjoy typical Chinese style party serving and fantastic flavor.</p>\r\n<p>Please book at least one day before party.</p>\r\n<p>\u00a0</p>",
+        "description": "<p>For 4 to 6 people \u00a0</p>\r\n<p>Enjoy typical Chinese style party serving and fantastic flavor.</p>\r\n<p>Please book at least one day before party.</p>\r\n<p>\u00a0</p>",
         "date_created": "2017-07-12T11:28:20.108Z"
     }
 },
@@ -375,7 +376,7 @@
     "fields": {
         "name": "Ready to book roast fish",
         "product": 25,
-        "description": "<p>For 3 ~ 5 people.</p>\r\n<p>A most famous dish in China. Fresh and tasty. </p>\r\n<p>Book at lease one day before your party.</p>",
+        "description": "<p>For 3 ~ 5 people.</p>\r\n<p>A most famous dish in China. Several flavor to choose from.</p>\r\n<p>Book at lease 2 days before your party time please</p>",
         "date_created": "2017-07-12T11:38:40.243Z"
     }
 },
@@ -385,7 +386,7 @@
     "fields": {
         "name": "Ready to book takoyaki",
         "product": 8,
-        "description": "<p>A Japanese dish and quite popular in China.</p>\r\n<p>Fresh made and fresh enjoyed.</p>\r\n<p>Only prepare on site.\u00a0</p>",
+        "description": "<p>A Japanese dish and quite popular in China.</p>\r\n<p>Everyone who tried my takoyaki said it's delicious.</p>\r\n<p>Maybe you can also have a try.</p>\r\n<p>Fresh made and fresh enjoyed. Only prepare on site.\u00a0</p>",
         "date_created": "2017-07-12T11:41:23.954Z"
     }
 }
