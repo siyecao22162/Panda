@@ -159,10 +159,9 @@
         "page_url": "/en-gb/"
     }
 },
-
 {
     "model": "promotions.pagepromotion",
-    "pk": 16,
+    "pk": 11,
     "fields": {
         "content_type": [
                 "promotions",
@@ -172,7 +171,7 @@
         "position": "page",
         "display_order": 0,
         "clicks": 0,
-        "date_created": "2017-07-19T09:36:53.329Z",
+        "date_created": "2017-07-19T19:30:19.570Z",
         "page_url": "/en-gb/promotion/"
     }
 },
@@ -188,7 +187,7 @@
         "position": "page",
         "display_order": 0,
         "clicks": 0,
-        "date_created": "2017-07-12T11:26:09.892Z",
+        "date_created": "2017-07-19T19:31:20.952Z",
         "page_url": "/en-gb/promotion/"
     }
 },
@@ -204,7 +203,7 @@
         "position": "page",
         "display_order": 0,
         "clicks": 0,
-        "date_created": "2017-07-12T11:28:41.689Z",
+        "date_created": "2017-07-19T19:33:28.679Z",
         "page_url": "/en-gb/promotion/"
     }
 },
@@ -220,7 +219,7 @@
         "position": "page",
         "display_order": 0,
         "clicks": 0,
-        "date_created": "2017-07-12T11:38:49.486Z",
+        "date_created": "2017-07-19T19:34:12.256Z",
         "page_url": "/en-gb/promotion/"
     }
 },
@@ -236,20 +235,39 @@
         "position": "page",
         "display_order": 0,
         "clicks": 0,
-        "date_created": "2017-07-12T11:41:42.469Z",
+        "date_created": "2017-07-19T19:34:45.323Z",
         "page_url": "/en-gb/promotion/"
     }
 },
 {
     "model": "promotions.pagepromotion",
-    "pk": 24,
+    "pk": 16,
     "fields": {
-        "content_type": 88,
+        "content_type": [
+                "promotions",
+                "singleproduct"
+        ],
         "object_id": 16,
         "position": "page",
         "display_order": 0,
         "clicks": 0,
-        "date_created": "2017-07-19T16:59:15.397Z",
+        "date_created": "2017-07-19T19:36:29.993Z",
+        "page_url": "/en-gb/promotion/"
+    }
+},
+{
+    "model": "promotions.pagepromotion",
+    "pk": 17,
+    "fields": {
+        "content_type": [
+                "promotions",
+                "singleproduct"
+        ],
+        "object_id": 17,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-19T19:38:45.150Z",
         "page_url": "/en-gb/promotion/"
     }
 },
@@ -359,28 +377,28 @@
     "fields": {
         "name": "Friday dish",
         "product": 46,
-        "description": "<p>For 1 person.</p>\r\n<p>A most popular dish in China. Just as easy to find its restaurants as to find a beautiful girl in Beijing.</p>\r\n<p>Deliver this Monday Lunch and Dinner.\u00a0</p>",
-        "date_created": "2017-07-12T11:21:52.118Z"
+        "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">For 1 person. Free rice offerted</p>\r\n<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">A most popular dish in China. Just as easy to find its restaurants as to find a beautiful girl in Beijing. haha</p>\r\n<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">Deliver this Monday Lunch and Dinner.\u00a0</p>",
+        "date_created": "2017-07-19T19:30:12.158Z"
     }
 },
 {
     "model": "promotions.singleproduct",
     "pk": 12,
     "fields": {
-        "name": "Ready to book sausage",
-        "product": 27,
-        "description": "<p>Homemade Chinese sausage.\u00a0</p>\r\n<p>Deliver will be possible after 3 days.</p>",
-        "date_created": "2017-07-12T11:25:59.141Z"
+        "name": "Gift",
+        "product": 50,
+        "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">Gift for ordered dish.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">Please add into your basket.</p>",
+        "date_created": "2017-07-19T19:31:14.813Z"
     }
 },
 {
     "model": "promotions.singleproduct",
     "pk": 13,
     "fields": {
-        "name": "Ready to book hotpot",
-        "product": 26,
-        "description": "<p>For 4 to 6 people \u00a0</p>\r\n<p>Enjoy typical Chinese style party serving and fantastic flavor.</p>\r\n<p>Please book at least one day before party.</p>\r\n<p>\u00a0</p>",
-        "date_created": "2017-07-12T11:28:20.108Z"
+        "name": "Book takoyaki for Party",
+        "product": 8,
+        "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">Party Serving. A Japanese dish and quite popular in China.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">Everyone who tried my takoyaki said it's delicious. In case you wonder why a Chinese is selling Japanese food. Haha</p>\r\n<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">Fresh made and fresh enjoyed. Only prepare on site.\u00a0</p>",
+        "date_created": "2017-07-19T19:33:23.519Z"
     }
 },
 {
@@ -389,18 +407,38 @@
     "fields": {
         "name": "Ready to book roast fish",
         "product": 25,
-        "description": "<p>For 3 ~ 5 people.</p>\r\n<p>A most famous dish in China. Several flavor to choose from.</p>\r\n<p>Book at lease 2 days before your party time please</p>",
-        "date_created": "2017-07-12T11:38:40.243Z"
+        "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">For 3 ~ 5 people.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">A most famous dish in China. Several flavor to choose from.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">Book at lease 2 days before your party time please</p>",
+        "date_created": "2017-07-19T19:34:07.027Z"
     }
 },
 {
     "model": "promotions.singleproduct",
     "pk": 15,
     "fields": {
-        "name": "Ready to book takoyaki",
-        "product": 8,
-        "description": "<p>A Japanese dish and quite popular in China.</p>\r\n<p>Everyone who tried my takoyaki said it's delicious.</p>\r\n<p>Maybe you can also have a try.</p>\r\n<p>Fresh made and fresh enjoyed. Only prepare on site.\u00a0</p>",
-        "date_created": "2017-07-12T11:41:23.954Z"
+        "name": "Ready to book hotpot",
+        "product": 26,
+        "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">For 4 to 6 people \u00a0</p>\r\n<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">Enjoy typical Chinese style party serving and fantastic flavor.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">Please book at least one day before party.</p>",
+        "date_created": "2017-07-19T19:34:39.493Z"
+    }
+},
+{
+    "model": "promotions.singleproduct",
+    "pk": 16,
+    "fields": {
+        "name": "Wanna try Annie's sausage?",
+        "product": 27,
+        "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">Packaged food. Homemade Chinese sausage.\u00a0</p>\r\n<p style=\"box-sizing: border-box; margin: 0px 0px 20px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f5f5f5;\">Deliver will be possible after 3 days.</p>",
+        "date_created": "2017-07-19T19:36:22.803Z"
+    }
+},
+{
+    "model": "promotions.singleproduct",
+    "pk": 17,
+    "fields": {
+        "name": "Homemade Baozi",
+        "product": 52,
+        "description": "<p>Packaged food. Homemade and handmade. ( Cannot afford a baozi machine...sorry)</p>\r\n<p>Delivery is possible after 3 days. Just steam it steam it.</p>\r\n<p>\u00a0</p>",
+        "date_created": "2017-07-19T19:38:39.138Z"
     }
 }
 ]
