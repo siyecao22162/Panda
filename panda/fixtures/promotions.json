@@ -365,7 +365,7 @@
     "fields": {
         "name": "Ready to book hotpot",
         "product": 26,
-        "description": "<p>Available for both family and party. \u00a0</p>\r\n<p>Enjoy typical Chinese style party serving and fantastic flavor.</p>\r\n<p>Please book at least one day before party.</p>\r\n<p>\u00a0</p>",
+        "description": "<p>For both 4 to 6 people \u00a0</p>\r\n<p>Enjoy typical Chinese style party serving and fantastic flavor.</p>\r\n<p>Please book at least one day before party.</p>\r\n<p>\u00a0</p>",
         "date_created": "2017-07-12T11:28:20.108Z"
     }
 },
@@ -375,7 +375,7 @@
     "fields": {
         "name": "Ready to book roast fish",
         "product": 25,
-        "description": "<p>A most famous dish in China. Very rare in France, though.</p>\r\n<p>Fresh and tasty. Good for 2 ~ 6 persons.</p>\r\n<p>Book at lease one day before your party.</p>",
+        "description": "<p>For 3 ~ 5 people.</p>\r\n<p>A most famous dish in China. Fresh and tasty. </p>\r\n<p>Book at lease one day before your party.</p>",
         "date_created": "2017-07-12T11:38:40.243Z"
     }
 },
@@ -385,7 +385,7 @@
     "fields": {
         "name": "Ready to book takoyaki",
         "product": 8,
-        "description": "<p>A Japanese dish but quite popular in China.</p>\r\n<p>Fresh made and fresh enjoyed.</p>\r\n<p>Only prepare on site.\u00a0</p>",
+        "description": "<p>A Japanese dish and quite popular in China.</p>\r\n<p>Fresh made and fresh enjoyed.</p>\r\n<p>Only prepare on site.\u00a0</p>",
         "date_created": "2017-07-12T11:41:23.954Z"
     }
 }

@@ -20,6 +20,34 @@
 
 {% block shipping_method %}
     <div class="basket-title">
+
+        <!-- This is a table showing delivering date -->
+        <!-- TODO: Better store the date to json -->
+        <table class="table table-striped">
+            <tr>
+                <th>{%trans "Category" %}</th>
+                <td><strong>{%trans "UPC first digit" %}</strong></td>
+                <td><span style="color:green"><strong>{%trans "Deliver Time (working day)" %}</strong></span></td>
+            </tr>
+            <tr>
+                <th>{% trans "Day Menu" %}</th>
+                <td>1</td>
+                <td><span style="color:red">1</span></td>
+            </tr>
+            <tr>
+                <th>{% trans "Party Serving" %}</th>
+                <td>2</td>
+                <td><span style="color:red">{% trans "Depending on customer's request" %}</span></td>
+            </tr>
+            <tr>
+                <th>{% trans "Packaged Food" %}</th>
+                <td>3</td>
+                <td><span style="color:red">3</span></td>
+            </tr>
+        </table>
+        <p>&emsp;</p>
+
+        <!-- Shipping methods and cost -->
         <div class="row">
             <h4 class="col-sm-8">{% trans "Method" %}</h4>
             <h4 class="col-sm-3">{% trans "Cost" %}</h4>
