@@ -331,6 +331,19 @@
     }
 },
 {
+    "model": "promotions.pagepromotion",
+    "pk": 24,
+    "fields": {
+        "content_type": 88,
+        "object_id": 16,
+        "position": "page",
+        "display_order": 0,
+        "clicks": 0,
+        "date_created": "2017-07-19T16:59:15.397Z",
+        "page_url": "/en-gb/promotion/"
+    }
+},
+{
     "model": "promotions.singleproduct",
     "pk": 1,
     "fields": {
