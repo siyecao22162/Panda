@@ -109,7 +109,7 @@
         "price_excl_tax": "9.99",
         "price_retail": null,
         "cost_price": null,
-        "num_in_stock": 200,
+        "num_in_stock": 0,
         "num_allocated": null,
         "low_stock_threshold": null,
         "date_created": "2017-07-11T14:58:18.232Z",
