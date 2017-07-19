@@ -259,5 +259,41 @@
         "date_created": "2017-07-12T10:23:19.568Z",
         "date_updated": "2017-07-12T10:23:19.568Z"
     }
+},
+{
+    "model": "partner.stockrecord",
+    "pk": 16,
+    "fields": {
+        "product": 47,
+        "partner": 1,
+        "partner_sku": "100102501",
+        "price_currency": "EUR",
+        "price_excl_tax": "9.99",
+        "price_retail": null,
+        "cost_price": null,
+        "num_in_stock": 50,
+        "num_allocated": null,
+        "low_stock_threshold": 1,
+        "date_created": "2017-07-19T09:06:59.377Z",
+        "date_updated": "2017-07-19T09:06:59.377Z"
+    }
+},
+{
+    "model": "partner.stockrecord",
+    "pk": 17,
+    "fields": {
+        "product": 48,
+        "partner": 1,
+        "partner_sku": "100102502",
+        "price_currency": "EUR",
+        "price_excl_tax": "9.99",
+        "price_retail": null,
+        "cost_price": null,
+        "num_in_stock": 50,
+        "num_allocated": null,
+        "low_stock_threshold": null,
+        "date_created": "2017-07-19T09:07:39.881Z",
+        "date_updated": "2017-07-19T09:07:39.881Z"
+    }
 }
 ]
