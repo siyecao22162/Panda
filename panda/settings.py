@@ -463,13 +463,14 @@ THUMBNAIL_REDIS_URL = env('THUMBNAIL_REDIS_URL', default=None)
 
 
 # paypal
-#PAYPAL_API_USERNAME = 'pandaannielai_api1.gmail.com'
-#PAYPAL_API_PASSWORD = 'DQWSQ7FJSABLRJW7'
-#PAYPAL_API_SIGNATURE = 'AFcWxV21C7fd0v3bYYYRCpSSRl31AdjSq4fSu8rxr1IKTLaMYEnQbyO7'
+PAYPAL_API_USERNAME = 'pandaannielai_api1.gmail.com'
+PAYPAL_API_PASSWORD = 'DQWSQ7FJSABLRJW7'
+PAYPAL_API_SIGNATURE = 'AFcWxV21C7fd0v3bYYYRCpSSRl31AdjSq4fSu8rxr1IKTLaMYEnQbyO7'
+PAYPAL_SANDBOX_MODE = False
 #paypal sandbox
-PAYPAL_API_USERNAME = 'pandaannielai-facilitator_api1.gmail.com'
-PAYPAL_API_PASSWORD = 'K59JREM6T3ZT32U6'
-PAYPAL_API_SIGNATURE = 'AFcWxV21C7fd0v3bYYYRCpSSRl31AizkRRkMk.O1zdtfpay91.nK5X5N'
+#PAYPAL_API_USERNAME = 'pandaannielai-facilitator_api1.gmail.com'
+#PAYPAL_API_PASSWORD = 'K59JREM6T3ZT32U6'
+#PAYPAL_API_SIGNATURE = 'AFcWxV21C7fd0v3bYYYRCpSSRl31AizkRRkMk.O1zdtfpay91.nK5X5N'
 
 # Django 1.6 has switched to JSON serializing for security reasons, but it does not
 # serialize Models. We should resolve this by extending the
