@@ -304,6 +304,14 @@
     }
 },
 {
+    "model": "catalogue.productcategory",
+    "pk": 30,
+    "fields": {
+        "product": 50,
+        "category": 2
+    }
+},
+{
     "model": "catalogue.product",
     "pk": 1,
     "fields": {
@@ -1072,7 +1080,7 @@
         "product_class": null,
         "rating": null,
         "date_created": "2017-07-19T09:06:59.152Z",
-        "date_updated": "2017-07-19T09:06:59.152Z",
+        "date_updated": "2017-07-19T12:53:34.440Z",
         "is_discountable": true,
         "product_options": []
     }
@@ -1090,537 +1098,577 @@
         "product_class": null,
         "rating": null,
         "date_created": "2017-07-19T09:07:39.716Z",
-        "date_updated": "2017-07-19T09:07:39.716Z",
+        "date_updated": "2017-07-19T12:53:08.337Z",
+        "is_discountable": true,
+        "product_options": []
+    }
+},
+{
+    "model": "catalogue.product",
+    "pk": 50,
+    "fields": {
+        "structure": "standalone",
+        "upc": "2001004",
+        "parent": null,
+        "title": "Oolong Tea",
+        "slug": "oolong-tea",
+        "description": "<h3><strong>Note: This tea is served only as a gift for ordering a main dish.</strong></h3>\r\n<p><span style=\"font-size: 18pt; color: #339966;\">Origin and Story</span></p>\r\n<p>\u00a0</p>\r\n<p>This tea came together with me from China. Immigrated tea? Anyway, please check wiki :</p>\r\n<p><a title=\"Huangmenji\" href=\"https://en.wikipedia.org/wiki/Oolong\" target=\"_blank\" rel=\"noopener\">Click to view Oolong Tea wiki</a></p>\r\n<p>\u00a0</p>",
+        "product_class": 2,
+        "rating": null,
+        "date_created": "2017-07-19T13:06:26.479Z",
+        "date_updated": "2017-07-19T13:21:02.877Z",
         "is_discountable": true,
         "product_options": []
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 231,
+    "pk": 327,
+    "fields": {
+        "product": 50,
+        "original": "images/products/2017/07/4001001.jpg",
+        "caption": "",
+        "display_order": 0,
+        "date_created": "2017-07-19T13:06:26.680Z"
+    }
+},
+{
+    "model": "catalogue.productimage",
+    "pk": 328,
+    "fields": {
+        "product": 50,
+        "original": "images/products/2017/07/4001001_2.jpg",
+        "caption": "",
+        "display_order": 1,
+        "date_created": "2017-07-19T13:06:26.713Z"
+    }
+},
+{
+    "model": "catalogue.productimage",
+    "pk": 329,
     "fields": {
         "product": 2,
         "original": "images/products/2017/07/1001002.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.468Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.504Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 232,
+    "pk": 330,
     "fields": {
         "product": 26,
         "original": "images/products/2017/07/2001002.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.482Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.518Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 233,
+    "pk": 331,
     "fields": {
         "product": 24,
         "original": "images/products/2017/07/1001024.jpeg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.498Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.534Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 234,
+    "pk": 332,
     "fields": {
         "product": 13,
         "original": "images/products/2017/07/1001013.jpg",
         "caption": "",
-        "display_order": 5,
-        "date_created": "2017-07-18T15:50:04.508Z"
+        "display_order": 7,
+        "date_created": "2017-07-19T13:16:50.544Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 235,
+    "pk": 333,
     "fields": {
         "product": 12,
         "original": "images/products/2017/07/1001012.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.523Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.559Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 236,
+    "pk": 334,
     "fields": {
         "product": 18,
         "original": "images/products/2017/07/1001018.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.540Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.573Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 237,
+    "pk": 335,
     "fields": {
         "product": 4,
         "original": "images/products/2017/07/1001004.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.554Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.588Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 238,
+    "pk": 336,
     "fields": {
         "product": 1,
         "original": "images/products/2017/07/1001001.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.570Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.603Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 239,
+    "pk": 337,
     "fields": {
         "product": 15,
         "original": "images/products/2017/07/1001015.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.585Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.618Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 240,
+    "pk": 338,
+    "fields": {
+        "product": 46,
+        "original": "images/products/2017/07/1001025.jpg",
+        "caption": "",
+        "display_order": 4,
+        "date_created": "2017-07-19T13:16:50.633Z"
+    }
+},
+{
+    "model": "catalogue.productimage",
+    "pk": 339,
     "fields": {
         "product": 19,
         "original": "images/products/2017/07/1001019.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.601Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.648Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 241,
+    "pk": 340,
     "fields": {
         "product": 16,
         "original": "images/products/2017/07/1001016.jpg",
         "caption": "",
-        "display_order": 5,
-        "date_created": "2017-07-18T15:50:04.612Z"
+        "display_order": 7,
+        "date_created": "2017-07-19T13:16:50.659Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 242,
+    "pk": 341,
     "fields": {
         "product": 8,
         "original": "images/products/2017/07/1001008.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.627Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.674Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 243,
+    "pk": 342,
     "fields": {
         "product": 5,
         "original": "images/products/2017/07/1001005.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.642Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.690Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 244,
+    "pk": 343,
     "fields": {
         "product": 25,
         "original": "images/products/2017/07/2001001.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.656Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.704Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 245,
+    "pk": 344,
     "fields": {
         "product": 3,
         "original": "images/products/2017/07/1001003.jpg",
         "caption": "",
-        "display_order": 5,
-        "date_created": "2017-07-18T15:50:04.667Z"
+        "display_order": 7,
+        "date_created": "2017-07-19T13:16:50.715Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 246,
+    "pk": 345,
     "fields": {
         "product": 17,
         "original": "images/products/2017/07/1001017.png",
         "caption": "",
-        "display_order": 5,
-        "date_created": "2017-07-18T15:50:04.681Z"
+        "display_order": 7,
+        "date_created": "2017-07-19T13:16:50.729Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 247,
+    "pk": 346,
     "fields": {
         "product": 11,
         "original": "images/products/2017/07/1001011.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.695Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.743Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 248,
+    "pk": 347,
     "fields": {
         "product": 23,
         "original": "images/products/2017/07/1001023.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.712Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.760Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 249,
+    "pk": 348,
     "fields": {
         "product": 27,
         "original": "images/products/2017/07/3002001.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.726Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.774Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 250,
+    "pk": 349,
     "fields": {
         "product": 21,
         "original": "images/products/2017/07/1001021.jpg",
         "caption": "",
-        "display_order": 5,
-        "date_created": "2017-07-18T15:50:04.737Z"
+        "display_order": 7,
+        "date_created": "2017-07-19T13:16:50.785Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 251,
+    "pk": 350,
     "fields": {
         "product": 7,
         "original": "images/products/2017/07/1001007.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.752Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.801Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 252,
+    "pk": 351,
     "fields": {
         "product": 20,
         "original": "images/products/2017/07/1001020.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.768Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.816Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 253,
+    "pk": 352,
     "fields": {
         "product": 22,
         "original": "images/products/2017/07/1001022.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.784Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.832Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 254,
+    "pk": 353,
     "fields": {
         "product": 10,
         "original": "images/products/2017/07/1001010.jpg",
         "caption": "",
-        "display_order": 10,
-        "date_created": "2017-07-18T15:50:04.798Z"
+        "display_order": 14,
+        "date_created": "2017-07-19T13:16:50.847Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 255,
+    "pk": 354,
     "fields": {
         "product": 14,
         "original": "images/products/2017/07/1001014.jpg",
         "caption": "",
-        "display_order": 5,
-        "date_created": "2017-07-18T15:50:04.808Z"
+        "display_order": 7,
+        "date_created": "2017-07-19T13:16:50.856Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 256,
+    "pk": 355,
     "fields": {
         "product": 2,
-        "original": "images/products/2017/07/1001002_2lwsImI.jpg",
+        "original": "images/products/2017/07/1001002_rLIGVpc.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.433Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.456Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 257,
+    "pk": 356,
     "fields": {
         "product": 26,
-        "original": "images/products/2017/07/2001002_ucZsp47.jpg",
+        "original": "images/products/2017/07/2001002_EVtHfIv.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.440Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.463Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 258,
+    "pk": 357,
     "fields": {
         "product": 9,
         "original": "images/products/2017/07/1001009.jpg",
         "caption": "",
-        "display_order": 5,
-        "date_created": "2017-07-18T15:50:07.455Z"
+        "display_order": 7,
+        "date_created": "2017-07-19T13:16:53.476Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 259,
+    "pk": 358,
     "fields": {
         "product": 12,
-        "original": "images/products/2017/07/1001012_Xtg1UkS.jpg",
+        "original": "images/products/2017/07/1001012_kN7RSGW.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.463Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.483Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 260,
+    "pk": 359,
     "fields": {
         "product": 18,
-        "original": "images/products/2017/07/1001018_0K2IlEn.jpg",
+        "original": "images/products/2017/07/1001018_pC9VMzc.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.469Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.490Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 261,
+    "pk": 360,
     "fields": {
         "product": 4,
-        "original": "images/products/2017/07/1001004_RMwdavv.jpg",
+        "original": "images/products/2017/07/1001004_YudL6NL.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.477Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.496Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 262,
+    "pk": 361,
     "fields": {
         "product": 1,
-        "original": "images/products/2017/07/1001001_dwLI5Ik.jpg",
+        "original": "images/products/2017/07/1001001_HsPY84c.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.483Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.502Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 263,
+    "pk": 362,
     "fields": {
         "product": 15,
-        "original": "images/products/2017/07/1001015_NKbwMtA.jpg",
+        "original": "images/products/2017/07/1001015_ADt9pIg.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.489Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.508Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 264,
+    "pk": 363,
+    "fields": {
+        "product": 46,
+        "original": "images/products/2017/07/1001025_1zny5qD.jpg",
+        "caption": "",
+        "display_order": 5,
+        "date_created": "2017-07-19T13:16:53.514Z"
+    }
+},
+{
+    "model": "catalogue.productimage",
+    "pk": 364,
     "fields": {
         "product": 24,
         "original": "images/products/2017/07/1001024.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.495Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.519Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 265,
+    "pk": 365,
     "fields": {
         "product": 19,
-        "original": "images/products/2017/07/1001019_MPL1NCn.jpg",
+        "original": "images/products/2017/07/1001019_fqCVqt2.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.501Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.524Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 266,
+    "pk": 366,
     "fields": {
         "product": 8,
-        "original": "images/products/2017/07/1001008_aq1fcKg.jpg",
+        "original": "images/products/2017/07/1001008_IcoRBpS.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.508Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.531Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 267,
+    "pk": 367,
     "fields": {
         "product": 5,
-        "original": "images/products/2017/07/1001005_ayH0mtI.jpg",
+        "original": "images/products/2017/07/1001005_hExHnq0.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.515Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.536Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 268,
+    "pk": 368,
     "fields": {
         "product": 25,
-        "original": "images/products/2017/07/2001001_tL01DqN.jpg",
+        "original": "images/products/2017/07/2001001_36Nhuys.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.520Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.542Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 269,
+    "pk": 369,
     "fields": {
         "product": 6,
         "original": "images/products/2017/07/1001006.jpg",
         "caption": "",
-        "display_order": 5,
-        "date_created": "2017-07-18T15:50:07.532Z"
+        "display_order": 7,
+        "date_created": "2017-07-19T13:16:53.553Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 270,
+    "pk": 370,
     "fields": {
         "product": 11,
-        "original": "images/products/2017/07/1001011_dRa4SdP.jpg",
+        "original": "images/products/2017/07/1001011_fnAvm8R.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.539Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.559Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 271,
+    "pk": 371,
     "fields": {
         "product": 23,
-        "original": "images/products/2017/07/1001023_P45U60d.jpg",
+        "original": "images/products/2017/07/1001023_tQRhZRF.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.547Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.566Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 272,
+    "pk": 372,
     "fields": {
         "product": 27,
-        "original": "images/products/2017/07/3002001_dmlLcwX.jpg",
+        "original": "images/products/2017/07/3002001_dUCXKza.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.552Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.571Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 273,
+    "pk": 373,
     "fields": {
         "product": 7,
-        "original": "images/products/2017/07/1001007_xD0i7eI.jpg",
+        "original": "images/products/2017/07/1001007_IZfjbfD.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.559Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.577Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 274,
+    "pk": 374,
     "fields": {
         "product": 20,
-        "original": "images/products/2017/07/1001020_UUnzBDN.jpg",
+        "original": "images/products/2017/07/1001020_5np4LD3.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.567Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.584Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 275,
+    "pk": 375,
     "fields": {
         "product": 22,
-        "original": "images/products/2017/07/1001022_pnoYbkl.jpg",
+        "original": "images/products/2017/07/1001022_WmMVQFx.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.574Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.591Z"
     }
 },
 {
     "model": "catalogue.productimage",
-    "pk": 276,
+    "pk": 376,
     "fields": {
         "product": 10,
-        "original": "images/products/2017/07/1001010_wUUk7MG.jpg",
+        "original": "images/products/2017/07/1001010_xfZhYvO.jpg",
         "caption": "",
-        "display_order": 11,
-        "date_created": "2017-07-18T15:50:07.580Z"
-    }
-},
-{
-    "model": "catalogue.productimage",
-    "pk": 277,
-    "fields": {
-        "product": 46,
-        "original": "images/products/2017/07/1001033yes.jpg",
-        "caption": "",
-        "display_order": 0,
-        "date_created": "2017-07-19T09:04:22.017Z"
-    }
-},
-{
-    "model": "catalogue.productimage",
-    "pk": 278,
-    "fields": {
-        "product": 46,
-        "original": "images/products/2017/07/1001033no.jpg",
-        "caption": "",
-        "display_order": 1,
-        "date_created": "2017-07-19T09:04:22.054Z"
+        "display_order": 15,
+        "date_created": "2017-07-19T13:16:53.596Z"
     }
 }
 ]
