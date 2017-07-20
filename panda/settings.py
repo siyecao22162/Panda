@@ -103,18 +103,20 @@ USE_L10N = True
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = location("public/media")
+#MEDIA_ROOT = location("public/media")
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
 MEDIA_URL = '/media/'
-
 STATIC_URL = '/static/'
+
 if os.environ.get('HOSTNAME') is not None and "webfaction" in os.environ.get('HOSTNAME'):
     STATIC_ROOT = "/home/nkannielai/webapps/static_media/"
+    MEDIA_ROOT = "/home/nkannielai/webapps/media/"
 else:
     STATIC_ROOT = location('public/static')
+    MEDIA_ROOT = location("public/media")
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = (
