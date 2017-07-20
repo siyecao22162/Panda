@@ -285,6 +285,7 @@ INSTALLED_APPS = [
     'django.contrib.sitemaps',
     'django_extensions',
     'paypal',
+    'dbbackup',  # django-dbbackup
 
     # Debug toolbar + extensions
     'debug_toolbar',
@@ -473,6 +474,19 @@ PAYPAL_SANDBOX_MODE = False
 #PAYPAL_API_USERNAME = 'pandaannielai-facilitator_api1.gmail.com'
 #PAYPAL_API_PASSWORD = 'K59JREM6T3ZT32U6'
 #PAYPAL_API_SIGNATURE = 'AFcWxV21C7fd0v3bYYYRCpSSRl31AizkRRkMk.O1zdtfpay91.nK5X5N'
+
+if os.environ.get('HOSTNAME') is not None and "webfaction" in os.environ.get('HOSTNAME'):
+    DBBACKUP_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+    DBBACKUP_STORAGE_OPTIONS = {
+        'access_key': os.environ.get('S3_ACCESS_KEY', ''),
+        'secret_key':  os.environ.get('S3_SECRET_KEY', ''),
+        'bucket_name': 'pandaannie',
+        'host': 's3.eu-central-1.amazonaws.com'
+    }
+    S3_USE_SIGV4 = True
+else:
+    DBBACKUP_STORAGE = 'django.core.files.storage.FileSystemStorage'
+    DBBACKUP_STORAGE_OPTIONS = {'location': '.'}
 
 # Django 1.6 has switched to JSON serializing for security reasons, but it does not
 # serialize Models. We should resolve this by extending the
