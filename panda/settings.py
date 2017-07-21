@@ -21,8 +21,7 @@ ALLOWED_HOSTS = [
 
 # This is needed for the hosted version of the sandbox
 ADMINS = (
-    ('David Winterbottom', 'david.winterbottom@gmail.com'),
-    ('Michael van Tellingen', 'michaelvantellingen@gmail.com'),
+    ('Annie Lai', os.environ.get('DEFAULT_FROM_EMAIL', '')),
 )
 EMAIL_SUBJECT_PREFIX = '[Panda Annie] '
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -376,6 +375,7 @@ DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')   # 'annie@pandaannie.
 EMAIL_USE_TLS = True
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 OSCAR_FROM_EMAIL = DEFAULT_FROM_EMAIL
+DBBACKUP_HOSTNAME = ALLOWED_HOSTS                 # For django-dbbackup app sends failure report
 
 # Hidden Oscar features, e.g. wishlists or reviews
 OSCAR_HIDDEN_FEATURES = ["reviews", "wishlists"]
