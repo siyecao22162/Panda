@@ -110,7 +110,7 @@ USE_L10N = True
 MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
 
-if os.environ.get('HOSTNAME') is not None and "webfaction" in os.environ.get('HOSTNAME'):
+if os.environ.get('MAILFROM') is not None and "webfaction" in os.environ.get('MAILFROM'):
     STATIC_ROOT = "/home/nkannielai/webapps/static_media/"
     MEDIA_ROOT = "/home/nkannielai/webapps/media/"
 else:
@@ -475,7 +475,7 @@ PAYPAL_SANDBOX_MODE = False
 #PAYPAL_API_PASSWORD = 'K59JREM6T3ZT32U6'
 #PAYPAL_API_SIGNATURE = 'AFcWxV21C7fd0v3bYYYRCpSSRl31AizkRRkMk.O1zdtfpay91.nK5X5N'
 
-if os.environ.get('HOSTNAME') is not None and "webfaction" in os.environ.get('HOSTNAME'):
+if os.environ.get('MAILFROM') is not None and "webfaction" in os.environ.get('MAILFROM'):
     DBBACKUP_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
     DBBACKUP_STORAGE_OPTIONS = {
         'access_key': os.environ.get('S3_ACCESS_KEY', ''),
