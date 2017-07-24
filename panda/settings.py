@@ -21,8 +21,7 @@ ALLOWED_HOSTS = [
 
 # This is needed for the hosted version of the sandbox
 ADMINS = (
-    ('David Winterbottom', 'david.winterbottom@gmail.com'),
-    ('Michael van Tellingen', 'michaelvantellingen@gmail.com'),
+    ('Annie Lai', os.environ.get('DEFAULT_FROM_EMAIL', '')),
 )
 EMAIL_SUBJECT_PREFIX = '[Panda Annie] '
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -111,7 +110,7 @@ USE_L10N = True
 MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
 
-if os.environ.get('HOSTNAME') is not None and "webfaction" in os.environ.get('HOSTNAME'):
+if os.environ.get('MAILFROM') is not None and "webfaction" in os.environ.get('MAILFROM'):
     STATIC_ROOT = "/home/nkannielai/webapps/static_media/"
     MEDIA_ROOT = "/home/nkannielai/webapps/media/"
 else:
@@ -376,6 +375,7 @@ DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')   # 'annie@pandaannie.
 EMAIL_USE_TLS = True
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 OSCAR_FROM_EMAIL = DEFAULT_FROM_EMAIL
+DBBACKUP_HOSTNAME = ALLOWED_HOSTS                 # For django-dbbackup app sends failure report
 
 # Hidden Oscar features, e.g. wishlists or reviews
 OSCAR_HIDDEN_FEATURES = ["reviews", "wishlists"]
@@ -466,16 +466,16 @@ THUMBNAIL_REDIS_URL = env('THUMBNAIL_REDIS_URL', default=None)
 
 
 # paypal
-PAYPAL_API_USERNAME = 'pandaannielai_api1.gmail.com'
-PAYPAL_API_PASSWORD = 'DQWSQ7FJSABLRJW7'
-PAYPAL_API_SIGNATURE = 'AFcWxV21C7fd0v3bYYYRCpSSRl31AdjSq4fSu8rxr1IKTLaMYEnQbyO7'
-PAYPAL_SANDBOX_MODE = False
+#PAYPAL_API_USERNAME = 'pandaannielai_api1.gmail.com'
+#PAYPAL_API_PASSWORD = 'DQWSQ7FJSABLRJW7'
+#PAYPAL_API_SIGNATURE = 'AFcWxV21C7fd0v3bYYYRCpSSRl31AdjSq4fSu8rxr1IKTLaMYEnQbyO7'
+#PAYPAL_SANDBOX_MODE = False
 #paypal sandbox
-#PAYPAL_API_USERNAME = 'pandaannielai-facilitator_api1.gmail.com'
-#PAYPAL_API_PASSWORD = 'K59JREM6T3ZT32U6'
-#PAYPAL_API_SIGNATURE = 'AFcWxV21C7fd0v3bYYYRCpSSRl31AizkRRkMk.O1zdtfpay91.nK5X5N'
+PAYPAL_API_USERNAME = 'pandaannielai-facilitator_api1.gmail.com'
+PAYPAL_API_PASSWORD = 'K59JREM6T3ZT32U6'
+PAYPAL_API_SIGNATURE = 'AFcWxV21C7fd0v3bYYYRCpSSRl31AizkRRkMk.O1zdtfpay91.nK5X5N'
 
-if os.environ.get('HOSTNAME') is not None and "webfaction" in os.environ.get('HOSTNAME'):
+if os.environ.get('MAILFROM') is not None and "webfaction" in os.environ.get('MAILFROM'):
     DBBACKUP_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
     DBBACKUP_STORAGE_OPTIONS = {
         'access_key': os.environ.get('S3_ACCESS_KEY', ''),
