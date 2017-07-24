@@ -18,7 +18,7 @@
     <div class="basket-items">
         <div class="row">
             <div class="col-sm-8">
-                <h4>Cash/Ticket Resto</h4>
+                <h4>Cash or Ticket Resto</h4>
                 <p>Pay with cash or ticket resto on delivery</p>
             </div>
             <div class="col-sm-3">
@@ -34,12 +34,13 @@
             <div class="col-sm-8">
                 <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png" alt="Credit Card Badges">
                 <p></p>
-                <p>Pay now with Paypal or a credit card</p>
+                <p>Pay now with Paypal or a card</p>
             </div>
             <div class="col-sm-3">
                 <form method="post" action="{% url 'paypal-redirect' %}">
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-lg btn-primary pull-right" data-loading-text="{% trans 'Submitting...' %}">{% trans "Select option" %}</button>
+                    <!-- TODO: continue paypal integration after certification -->
+                    <button type="submit" disabled="disabled" class="btn btn-lg btn-primary pull-right" data-loading-text="{% trans 'Submitting...' %}">{% trans "Select option" %}</button>
                 </form>
             </div>
         </div>
