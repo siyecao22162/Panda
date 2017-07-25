@@ -488,6 +488,10 @@ else:
     DBBACKUP_STORAGE = 'django.core.files.storage.FileSystemStorage'
     DBBACKUP_STORAGE_OPTIONS = {'location': '.'}
 
+DBBACKUP_CONNECTOR_MAPPING = {
+    'django.db.backends.sqlite3': 'dbbackup.db.sqlite.SqliteCPConnector',
+}
+
 # Django 1.6 has switched to JSON serializing for security reasons, but it does not
 # serialize Models. We should resolve this by extending the
 # django/core/serializers/json.Serializer to have the `dumps` function. Also
