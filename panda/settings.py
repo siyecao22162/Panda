@@ -13,10 +13,11 @@ DEBUG = env.bool('DEBUG', default=True)
 SQL_DEBUG = DEBUG
 
 ALLOWED_HOSTS = [
-    '*',
-    # 'latest.oscarcommerce.com',
-    # 'master.oscarcommerce.com',
-    # 'localhost',
+    '.webfaction.com',
+    '.pandaannie.com',
+    '.paypal.com',
+    'localhost',
+    '127.0.0.1',
 ]
 
 # This is needed for the hosted version of the sandbox
