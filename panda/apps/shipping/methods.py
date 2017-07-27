@@ -8,9 +8,9 @@ class StandardLunch(methods.Base):
     name = 'Lunch Time Delivery'
 
     charge_per_order = D('3.00')
-    threshold = D('15.00')
+    threshold = D('8.00')
 
-    description = "Around 11:30 am ~ 12:30 pm;&emsp;Free (total >= 15€)"
+    description = "11:30 am ~ 12:30 pm;&emsp;"
 
     def calculate(self, basket):
         # Free for orders over some threshold
@@ -33,9 +33,9 @@ class StandardDinner(methods.Base):
     name = 'Diner Time Delivery'
 
     charge_per_order = D('3.00')
-    threshold = D('15.00')
+    threshold = D('8.00')
 
-    description = "Around 5 pm - 6 pm;&emsp;Free (total >= 15€)"
+    description = "5 pm - 6 pm;&emsp;Free (total >= 8€)"
 
     def calculate(self, basket):
         # Free for orders over some threshold
