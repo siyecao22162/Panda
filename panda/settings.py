@@ -76,8 +76,7 @@ LANGUAGES = (
     # ('el', gettext_noop('Greek')),
     # ('es', gettext_noop('Spanish')),
     # ('fi', gettext_noop('Finnish')),
-    # TODO: enable french page later
-    # ('fr', gettext_noop('French')),
+    ('fr', gettext_noop('French')),
     # ('it', gettext_noop('Italian')),
     # ('ko', gettext_noop('Korean')),
     # ('nl', gettext_noop('Dutch')),
