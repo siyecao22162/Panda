@@ -278,7 +278,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
-    'modeltranslation',
+    # 'modeltranslation',
     'django.contrib.admin',
     'django.contrib.flatpages',
     'django.contrib.staticfiles',
