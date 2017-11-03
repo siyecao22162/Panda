@@ -61,7 +61,7 @@ TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-gb'
+LANGUAGE_CODE = 'fr'
 
 # Includes all languages that have >50% coverage in Transifex
 # Taken from Django's default setting for LANGUAGES
@@ -72,7 +72,7 @@ LANGUAGES = (
     # ('cs', gettext_noop('Czech')),
     # ('da', gettext_noop('Danish')),
     # ('de', gettext_noop('German')),
-    ('en-gb', gettext_noop('British English')),
+    # ('en-gb', gettext_noop('British English')),
     # ('el', gettext_noop('Greek')),
     # ('es', gettext_noop('Spanish')),
     # ('fi', gettext_noop('Finnish')),
