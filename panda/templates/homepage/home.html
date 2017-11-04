@@ -7,7 +7,6 @@
 <!-- Head -->
 <head>
 
-<title>Panda Annie: Personal cuisine. Chinese food, Asian food, etc</title>
 
 <!-- Meta-Tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,10 +49,10 @@
 				<div class="menu-wrap">
 					<nav class="menu">
 						<div class="icon-list">
-							<a class="scroll active" href="#agilehome"><i class="fa fa-home"></i><span>Home</span></a>
-							<a  href="{% url 'promotion' %}"><i class="fa fa-birthday-cake"></i><span>{% trans "On Sale" %}</span></a>
-						    <a  href="{% url 'catalogue:index' %}"><i class="fa fa-picture-o"></i><span>{% trans "All Products" %}</span></a>
-							<a href="{% url 'basket:summary' %}"><i class="fa fa-bar-chart"></i><span>{% trans "View Basket" %}</span></a>
+							<a class="scroll active" href="#agilehome"><i class="fa fa-home"></i><span>Accueil</span></a>
+							<a  href="{% url 'promotion' %}"><i class="fa fa-birthday-cake"></i><span>{% trans "Formule" %}</span></a>
+						    <a  href="{% url 'catalogue:index' %}"><i class="fa fa-picture-o"></i><span>{% trans "Tous les produits" %}</span></a>
+							<a href="{% url 'basket:summary' %}"><i class="fa fa-bar-chart"></i><span>{% trans "Panier" %}</span></a>
 							<!--
 							<a class="scroll" href="#w3lsstatsaits"><i class="fa fa-bar-chart"></i><span>Stats</span></a>
 							<a class="scroll" href="#chefw3agile"><i class="fa fa-user"></i><span>Chefs</span></a>
@@ -61,7 +60,7 @@
 
 							<a class="scroll" href="#newsletter"><i class="fa fa-envelope-o"></i><span>Subscribe</span></a>
 							                      -->
-							<a class="scroll" href="#sl3waboutstia"><i class="fa fa-info"></i><span>{% trans "About" %}</span></a>
+							<a class="scroll" href="#sl3waboutstia"><i class="fa fa-info"></i><span>{% trans "Guide" %}</span></a>
 							<a class="scroll" href="#aitscontactw3l"><i class="fa fa-phone"></i><span>Contact</span></a>
 						</div>
 					</nav>
@@ -73,7 +72,7 @@
 				<p>{% trans "MENU" %}</p>
 			</div>
 			<div class="aitslogow3ls">
-					<a href="{% url 'homepage' %}"><div class="agilelogo">Panda  Annie</div></a>
+					<a href="{% url 'promotion' %}"><div class="agilelogo">Je commande</div></a>
 			</div>
 			<ul class="wthreecontact">
 				<p>
@@ -108,13 +107,13 @@
 		<div class="slider">
 			<ul class="rslides" id="slider">
 				<li>
-                    <a href="{% url 'promotion' %}"> <img title="Click to order" src="{% static 'home/images/slide-1.jpg' %}" alt="Panda  Annie"></a>
+                    <a href="{% url 'promotion' %}"> <img title="Cliquez pour commander" src="{% static 'home/images/slide-1.jpg' %}" alt="Panda  Annie"></a>
 				</li>
 				<li>
-					<a href="{% url 'promotion' %}"> <img title="Click to order" src="{% static 'home/images/slide-2.jpg' %}" alt="Panda  Annie"></a>
+					<a href="{% url 'promotion' %}"> <img title="Cliquez pour commander" src="{% static 'home/images/slide-2.jpg' %}" alt="Panda  Annie"></a>
 				</li>
 				<li>
-					<a href="{% url 'promotion' %}"> <img title="Click to order" src="{% static 'home/images/slide-3.jpg' %}" alt="Panda  Annie"></a>
+					<a href="{% url 'promotion' %}"> <img title="Cliquez pour commander" src="{% static 'home/images/slide-3.jpg' %}" alt="Panda  Annie"></a>
 				</li>
 			</ul>
 		</div>
@@ -128,17 +127,17 @@
 	<!-- About -->
 	<div class="sl3waboutstia" id="sl3waboutstia">
 		<div class="container">
-			<h1>ABOUT</h1>
+			<h1>PANDA ANNIE</h1>
 
 			<div class="sl3waboutstia-grids">
 				<div class="col-md-4 col-sm-4 sl3waboutstia-grid sl3waboutstia-grid-1">
-					<h3>Homemade Cuisine.</h3>
-					<big>Hi, I'm Annie. Bienvenue.</big>
-					<big>I am Chinese and an engineer who loves cooking...</big>
-					<a href="/en-gb/about/" target="_blank"> <big>About Annie</big></a>
+					<h3>Cuisine Asiatique.</h3>
+					<big>Bienvenue chez Panda Annie. </big>
+					<big>Je suis Annie. Je vien de Chine. J'adore la cuisine</big>
+					<a href="/en-gb/about/" target="_blank"> <big>À propos d'Annie</big></a>
 
 					<div class="w3-button">
-					<a class="btn btn-default" href="{% url 'promotion' %}">{% trans "Order Now" %}</a>
+					<a class="btn btn-default" href="{% url 'promotion' %}">{% trans "FORMULE" %}</a>
 					</div>
 				</div>
 
@@ -157,7 +156,7 @@
 					<img title="Click to order" src="{% static 'home/images/about.jpg' %}" alt="Panda Annie">
 				</div>
 				<div class="clearfix"></div>
-			</div>
+			</div>g
 
 
 
@@ -168,7 +167,7 @@
 
 	<!-- Desserts -->
 	<div class="wthreedesserts" id="wthreedesserts">
-        <i><h3>POPULAR DISHES</h3></i>
+        <i><h3>NOTRE SPÉCIALITÉ</h3></i>
         <div class="container-fluid page">
             <div class="page_inner">
                 <div class="content">
@@ -191,20 +190,20 @@
 
  <div class="aitscontactw3l" id="aitscontactw3l">
     <div class="container">
-        <h3>GET IN TOUCH</h3>
+        <h3>LAISSEZ UN MESSAGE</h3>
         <form action="" method="post" class="aitscontactw3l-grids">
             {% csrf_token %}
             <div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-1">
-                {% render_field form.name class+="fill fill-top" placeholder="name" %}
-                {% render_field form.email class+="fill" placeholder="email" %}
+                {% render_field form.name class+="fill fill-top" placeholder="Nom" %}
+                {% render_field form.email class+="fill" placeholder="Email" %}
             </div>
             <div class="col-md-3 col-sm-3 aitscontactw3l-grid aitscontactw3l-grid-2">
-                {% render_field form.phone class+="fill fill-top" placeholder="phone" %}
-                {% render_field form.place class+="fill" placeholder="place" %}
+                {% render_field form.phone class+="fill fill-top" placeholder="Téléphone" %}
+                {% render_field form.place class+="fill" placeholder="Ville" %}
             </div>
             <div class="col-md-6 col-sm-6 aitscontactw3l-grid aitscontactw3l-grid-3">
                 {% render_field form.message class+="fill message" placeholder="message" %}
-                <input class="submit" type="submit" name="Send" value="SEND">
+                <input class="submit" type="submit" name="Send" value="ENVOYER">
             </div>
 
 
@@ -240,7 +239,7 @@
 						<h5>Contact</h5>
 						<div class="phone">
 							<ul>
-								<li>+1 234 456 7890</li>
+								<li>+33 07 84 92 06 66</li>
 								<li>Mail : <a href="mailto:annie@pandaanie.com">annie@pandaannie.com</a></li>
 							</ul>
 						</div>
@@ -266,13 +265,13 @@
 				<div class="footer-bottom">
 					<div class="col-md-6 col-sm-6 footer-bottom-grid footer-nav">
 						<ul>
-							<li><a href="#agilehome">Home</a></li>
-							<li><a href="#sl3waboutstia">About</a></li>
-							<li><a href="#wthreedesserts">Specials</a></li>
+							<li><a href="#agilehome">{% trans 'Accueil' %}</a></li>
+							<li><a href="#sl3waboutstia">{% trans 'About' %}</a></li>
+							<li><a href="#wthreedesserts">{% trans 'Specials' %}</a></li>
                             <!--
 							<li><a href="#portfolio">Portfolio</a></li>
 -->
-							<li><a href="#aitscontactw3l">Contact</a></li>
+							<li><a href="#aitscontactw3l">{% trans 'Contact' %}</a></li>
 						</ul>
 					</div>
 					<div class="col-md-6 col-sm-6 footer-bottom-grid copyright">
