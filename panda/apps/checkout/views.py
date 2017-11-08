@@ -4,7 +4,7 @@ from oscar.apps.payment.models import SourceType
 
 class PaymentDetailsView(views.PaymentDetailsView):
     def handle_payment(self, order_number, total, **kwargs):
-        source_type, is_created = SourceType.objects.get_or_create(name='Cash on Delivery')
+        source_type, is_created = SourceType.objects.get_or_create(name='Espace ou ticket resto lors de la livraison')
         source = Source(
             source_type=source_type,
             currency=total.currency,
