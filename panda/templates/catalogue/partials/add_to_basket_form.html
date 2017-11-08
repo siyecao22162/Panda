@@ -16,17 +16,6 @@
         {% include "catalogue/partials/add_to_wishlist.html" %}
     {% endiffeature %}
 
-    {% block product_deliver_time %}
-        {% if product.product_class.name == 'Day Menu' %}
-        <p><strong> Deliver after 1 working day</strong></p>
-        {% else %}
-        {% if product.product_class.name == 'Packaged Food' %}
-        <p><strong> Deliver after 3 working days</strong></p>
-        {% else %}
-        <p><strong> Please specify deliver time in your order, thanks</strong></p>
-        {% endif %}
-        {% endif %}
-    {% endblock %}
 {% else %}
     {% if has_active_alert %}
         <p>{% trans "You have an active stock alert for this product." %}</p>
