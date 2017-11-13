@@ -10,7 +10,7 @@ class StandardLunch(methods.Base):
     charge_per_order = D('0.00')
     threshold = D('2.00')
 
-    description = "Mardi et Dimanche au Marché de La Ciotat;&emsp; Vendredi au Marché de Ceyrest"
+    description = "Mardi et Dimanche au Marché de La Ciotat; +33 07 84 92 06 66"
 
     def calculate(self, basket):
         # Free for orderHs over some threshold
@@ -33,9 +33,9 @@ class StandardDinner(methods.Base):
     name = 'DEMAIN SOIR'
 
     charge_per_order = D('3.00')
-    threshold = D('15.00')
+    threshold = D('18.99')
 
-    description = "18h ~ 20h;&emsp; Gratuite (total >= 14.99€)"
+    description = "18h ~ 20h demain soir;&emsp; Gratuite (total >= 18.99€); +33 07 84 92 06 66"
 
     def calculate(self, basket):
         # Free for orders over some threshold
