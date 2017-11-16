@@ -5,12 +5,12 @@ from oscar.core import prices
 
 class StandardLunch(methods.Base):
     code = 'standard lunch'
-    name = 'Recupez sur Marché'
+    name = 'A MIDI DANS 3 JOURS'
 
-    charge_per_order = D('0.00')
-    threshold = D('2.00')
+    charge_per_order = D('3.00')
+    threshold = D('18.99')
 
-    description = "Mardi et Dimanche au Marché de La Ciotat; +33 07 84 92 06 66"
+    description = "Livraison à midi dans 3 jours; Téléphone: +33 07 84 92 06 66"
 
     def calculate(self, basket):
         # Free for orderHs over some threshold
@@ -30,12 +30,12 @@ class StandardLunch(methods.Base):
 
 class StandardDinner(methods.Base):
     code = 'standard dinner'
-    name = 'DEMAIN SOIR'
+    name = 'A SOIR DANS 3 JOURS'
 
     charge_per_order = D('3.00')
     threshold = D('18.99')
 
-    description = "18h ~ 20h demain soir;&emsp; Gratuite (total >= 18.99€); +33 07 84 92 06 66"
+    description = "Livraison à soir dans 3 jours; Téléphone: +33 07 84 92 06 66"
 
     def calculate(self, basket):
         # Free for orders over some threshold
