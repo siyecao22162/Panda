@@ -31,9 +31,13 @@
 
             {% else %}
             <ul class="nav navbar-nav navbar-left">
-                <a href="/fr/contact/" target="_blank">{% trans "Contact Nous" %}</a>
-            </ul>
+                <li>
+                    <a href="/fr/contact/" target="_blank">
+                        <i class="glyphicon glyphicon-phone">   Nous Contactez </i>
+                    </a>
 
+</li>
+            </ul>
             {% endif %}
             <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
