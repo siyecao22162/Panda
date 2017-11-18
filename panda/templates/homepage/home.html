@@ -129,7 +129,7 @@
 	<!-- About -->
 	<div class="sl3waboutstia" id="sl3waboutstia">
 		<div class="container">
-			<h1>PANDA ANNIE</h1>
+			<h1>Menu chez Panda Annie</h1>
 
 			<div class="sl3waboutstia-grids">
 				<div class="col-md-4 col-sm-4 sl3waboutstia-grid sl3waboutstia-grid-1">
@@ -150,7 +150,7 @@
                         {% category_tree depth=2 as tree_categories %}
                         {% if tree_categories %}
                             {% for tree_category, info in tree_categories %}
-                       <li class="agilecake"><a href="{{ tree_category.get_absolute_url }}"><h3>{{ tree_category.name }}</h3></a></li>
+                       <li class="agilecake"><a href="{{ tree_category.get_absolute_url }}"><h4>{{ tree_category.name }}</h4></a></li>
                             {% endfor %}
                         {% endif %}
                    </ul>
