@@ -8,7 +8,7 @@ class StandardLunch(methods.Base):
     name = 'A MIDI DANS 3 JOURS'
 
     charge_per_order = D('3.00')
-    threshold = D('18.99')
+    threshold = D('14.99')
 
     description = "Livraison à midi dans 3 jours; Téléphone: +33 07 84 92 06 66"
 
@@ -33,7 +33,7 @@ class StandardDinner(methods.Base):
     name = 'A SOIR DANS 3 JOURS'
 
     charge_per_order = D('3.00')
-    threshold = D('18.99')
+    threshold = D('14.99')
 
     description = "Livraison à soir dans 3 jours; Téléphone: +33 07 84 92 06 66"
 
