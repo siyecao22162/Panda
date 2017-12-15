@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 from oscar.apps.shipping import methods
 from decimal import Decimal as D
 from oscar.core import prices
